@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """
-Generate a daily finance blog post using OpenAI and prepend it to index.html.
+Generate a daily finance blog post using GitHub Models and prepend it to index.html.
+
+Uses GitHub's model inference endpoint (https://models.inference.ai.azure.com) with
+the standard openai Python SDK — no separate API key required; the workflow's built-in
+GITHUB_TOKEN is used for authentication.
 
 Expected environment variables:
-  OPENAI_API_KEY  — OpenAI secret key
+  GITHUB_TOKEN  — automatically provided by GitHub Actions (no secrets needed)
 
 Reads  : topics-used.json  (list of already-published titles/slugs)
 Writes : posts/<slug>.html
@@ -94,7 +98,7 @@ def get_existing_titles() -> list[str]:
 
 
 # ---------------------------------------------------------------------------
-# OpenAI generation
+# GitHub Models generation
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = """\
@@ -124,7 +128,7 @@ Output ONLY a single valid JSON object — no markdown fences — with these key
 
 
 def generate_post(client: OpenAI, used_data: dict) -> tuple[dict, str]:
-    """Call OpenAI and return (parsed JSON data, date_iso string)."""
+    """Call GitHub Models and return (parsed JSON data, date_iso string)."""
     est = timezone(timedelta(hours=-5))
     today_dt = datetime.now(est)
     today_iso = today_dt.strftime("%Y-%m-%d")
@@ -348,16 +352,21 @@ def safe_slug(base_slug: str, used_slugs: list[str], date_iso: str) -> str:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    api_key = os.environ.get("OPENAI_API_KEY")
-    if not api_key:
-        print("ERROR: OPENAI_API_KEY environment variable is not set.", file=sys.stderr)
+    # GitHub Actions automatically provides GITHUB_TOKEN; no extra secret needed.
+    github_token = os.environ.get("GITHUB_TOKEN")
+    if not github_token:
+        print("ERROR: GITHUB_TOKEN environment variable is not set.", file=sys.stderr)
         sys.exit(1)
 
-    client = OpenAI(api_key=api_key)
+    # GitHub Models endpoint — same openai SDK, different base_url + token
+    client = OpenAI(
+        base_url="https://models.inference.ai.azure.com",
+        api_key=github_token,
+    )
 
     used_data = load_used_topics()
 
-    print("Calling OpenAI to generate post…")
+    print("Calling GitHub Models to generate post…")
     data, date_iso = generate_post(client, used_data)
 
     slug = safe_slug(data["slug"], used_data.get("slugs", []), date_iso)

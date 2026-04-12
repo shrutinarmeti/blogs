@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  models: read   # required for GitHub Models inference endpoint
 
 jobs:
   generate-post:
@@ -33,7 +34,7 @@ jobs:
 
       - name: Generate post
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_post.py
 
       - name: Commit and push new post

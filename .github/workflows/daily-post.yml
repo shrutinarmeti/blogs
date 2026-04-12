@@ -1,0 +1,47 @@
+name: Daily Finance Post
+
+on:
+  schedule:
+    # 08:00 AM EST = 13:00 UTC
+    - cron: '0 13 * * *'
+  # Allow manual trigger for testing
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  models: read   # required for GitHub Models inference endpoint
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          # Use a PAT (BLOG_DEPLOY_TOKEN) if main is branch-protected,
+          # otherwise the default GITHUB_TOKEN is sufficient.
+          token: ${{ secrets.BLOG_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install openai
+
+      - name: Generate post
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_post.py
+
+      - name: Commit and push new post
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add posts/ index.html topics-used.json
+          # Only commit if there are staged changes
+          git diff --staged --quiet || git commit -m "feat: daily finance post $(date -u +%Y-%m-%d)"
+          git push origin main

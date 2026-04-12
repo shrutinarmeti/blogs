@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
 </head>
 <body>
 
@@ -66,6 +68,24 @@
             <li>The minority of funds that do outperform in one period show <strong>little persistence</strong> — their odds of outperforming in the next period are close to chance.</li>
           </ul>
 
+          <table>
+            <thead>
+              <tr>
+                <th>Time Horizon</th>
+                <th>US Large-Cap Active Funds Underperforming S&amp;P 500</th>
+                <th>International Active Funds Underperforming Benchmark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1 year</td><td>~55%</td><td>~55%</td></tr>
+              <tr><td>5 years</td><td>~75%</td><td>~65%</td></tr>
+              <tr><td>10 years</td><td>~85%</td><td>~72%</td></tr>
+              <tr><td>15 years</td><td>~88–92%</td><td>~70–80%</td></tr>
+            </tbody>
+          </table>
+
+          <p><small>Source: S&amp;P Dow Jones SPIVA Scorecard. Past figures representative of long-run trends.</small></p>
+
           <blockquote>
             <p>Past performance is not indicative of future results. Nowhere is this truer than in picking actively managed funds.</p>
           </blockquote>
@@ -79,6 +99,22 @@
             <li>Index fund at 0.05% fee → <strong>~$743,000</strong></li>
             <li>Active fund at 0.80% fee → <strong>~$612,000</strong></li>
           </ul>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Fund Type</th>
+                <th>Expense Ratio</th>
+                <th>Final Value (30 yrs, $100k, 7% gross)</th>
+                <th>Lost to Fees</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Index ETF (e.g. VTI, VOO)</td><td>0.03–0.05%</td><td><strong>~$743,000</strong></td><td>~$8,000</td></tr>
+              <tr><td>Typical active fund</td><td>0.60–0.80%</td><td><strong>~$612,000</strong></td><td>~$139,000</td></tr>
+              <tr><td>High-cost active fund</td><td>1.00–1.20%</td><td><strong>~$554,000</strong></td><td>~$197,000</td></tr>
+            </tbody>
+          </table>
 
           <p>That's $131,000 in additional wealth — just from the fee difference, before accounting for any performance gap.</p>
 
@@ -94,6 +130,17 @@
           </ul>
 
           <h2>Practical Takeaways</h2>
+
+          <pre class="mermaid">
+flowchart TD
+    A["🤔 Choosing a Fund"] --> B{"Core equity exposure?\nUS / Developed Markets"}
+    B -- Yes --> C["✅ Low-cost Index Fund\ne.g. VTI, VXUS, VOO"]
+    B -- No --> D{"Niche or illiquid market?\nPrivate Equity / EM Small-Cap"}
+    D -- Yes --> E["Active may add value\nVet manager carefully:\nlong track record + low fees"]
+    D -- No --> F{"Tax-loss harvesting\nor factor tilt needed?"}
+    F -- Yes --> G["Consider Direct Indexing\nor Smart Beta ETF"]
+    F -- No --> C
+          </pre>
 
           <ol>
             <li><strong>For core equity exposure</strong> (US and international developed markets), the data strongly favors low-cost index funds.</li>

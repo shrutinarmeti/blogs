@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
 </head>
 <body>
 
@@ -72,6 +74,22 @@
             <li><strong>9–12 months</strong> — self-employed, industry with long hiring timelines, or living in a high cost-of-living area with limited job options</li>
           </ul>
 
+          <table>
+            <thead>
+              <tr>
+                <th>Your Situation</th>
+                <th>Recommended Fund Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Stable job, dual income, low fixed costs</td><td>3 months</td></tr>
+              <tr><td>Single income or variable income (freelance / commission)</td><td>6 months</td></tr>
+              <tr><td>Specialized career or dependents</td><td>6 months</td></tr>
+              <tr><td>Self-employed or industry with long hiring timelines</td><td>9 months</td></tr>
+              <tr><td>High cost-of-living area, limited local job market</td><td>12 months</td></tr>
+            </tbody>
+          </table>
+
           <p>Calculate your <em>essential</em> monthly expenses — rent/mortgage, utilities, groceries, insurance, minimum debt payments. That's your monthly baseline. Multiply by your target months.</p>
 
           <blockquote>
@@ -88,9 +106,46 @@
             <li><strong>Treasury bills (short-term)</strong> — slightly higher yield, still very liquid, backed by the US government. Slightly more friction to access than a savings account.</li>
           </ul>
 
+          <table>
+            <thead>
+              <tr>
+                <th>Account Type</th>
+                <th>Liquidity</th>
+                <th>Typical Yield</th>
+                <th>Safety</th>
+                <th>Verdict</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>High-Yield Savings (HYSA)</td><td>Instant</td><td>4–5% APY</td><td>FDIC insured</td><td>✅ Best for most</td></tr>
+              <tr><td>Money Market Account</td><td>Instant</td><td>4–5% APY</td><td>FDIC insured</td><td>✅ Good alternative</td></tr>
+              <tr><td>Treasury Bills (4-week)</td><td>1–2 business days</td><td>~5%+</td><td>US Gov't backed</td><td>✅ Slightly higher yield</td></tr>
+              <tr><td>Checking Account</td><td>Instant</td><td>~0%</td><td>FDIC insured</td><td>❌ Too tempting to spend</td></tr>
+              <tr><td>Stock Market / ETFs</td><td>1–2 business days</td><td>Variable</td><td>Not guaranteed</td><td>❌ Too volatile</td></tr>
+              <tr><td>CD (with penalty)</td><td>Locked</td><td>4–5% APY</td><td>FDIC insured</td><td>❌ Illiquid in a crisis</td></tr>
+            </tbody>
+          </table>
+
           <p>What to <em>avoid</em>: the stock market (too volatile), CDs with early withdrawal penalties (too illiquid), or keeping it in your checking account (too tempting to spend).</p>
 
           <h2>Building It on a Tight Budget</h2>
+
+          <pre class="mermaid">
+flowchart TD
+    A["📊 Calculate monthly\nessential expenses"] --> B["Set target months:\n3 / 6 / 9 / 12"]
+    B --> C{"Do you have a\n$1,000 starter fund?"}
+    C -- No --> D["Goal: Save $1,000 first\nCut one discretionary expense"]
+    D --> E["Automate monthly transfer\nto HYSA on payday"]
+    C -- Yes --> E
+    E --> F{"Windfall received?\nTax refund / bonus / gift"}
+    F -- Yes --> G["Direct to emergency fund first"]
+    G --> H{"Fund fully funded?"}
+    F -- No --> H
+    H -- No --> E
+    H -- Yes --> I["✅ Resume investing &\nextra debt payments"]
+    I --> J["If you use the fund:\nreplenish becomes #1 priority"]
+    J --> H
+          </pre>
 
           <p>If a 3-month emergency fund feels overwhelming, start smaller. A <strong>$1,000 "starter" emergency fund</strong> is enough to handle most common surprises without going into debt. Once you have that, scale up:</p>
 

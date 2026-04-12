@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
 </head>
 <body>
 
@@ -82,9 +84,38 @@ Where:
 
           <p>Investor A contributed <em>less than a third</em> of what Investor B did — and still came out ahead. That is compound interest at work.</p>
 
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Investor A (Early Starter)</th>
+                <th>Investor B (Late Starter)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Start contributing</td><td>Age 22</td><td>Age 32</td></tr>
+              <tr><td>Stop contributing</td><td>Age 32</td><td>Age 65</td></tr>
+              <tr><td>Annual contribution</td><td>$5,000</td><td>$5,000</td></tr>
+              <tr><td>Years contributing</td><td>10 years</td><td>33 years</td></tr>
+              <tr><td>Total invested</td><td>$50,000</td><td>$165,000</td></tr>
+              <tr><td>Final value at 65 (7% return)</td><td><strong>~$602,000</strong></td><td><strong>~$540,000</strong></td></tr>
+            </tbody>
+          </table>
+
           <blockquote>
             <p>Time in the market beats timing the market, every time. The best day to start investing was yesterday. The second best day is today.</p>
           </blockquote>
+
+          <pre class="mermaid">
+flowchart TD
+    A["💰 Invest Principal"] --> B["Earn Returns\n(interest / dividends / gains)"]
+    B --> C["Returns Added to Balance"]
+    C --> D["Larger Base Next Period"]
+    D --> B
+    D --> E{"Reached\nGoal?"}
+    E -- No --> B
+    E -- Yes --> F["🎉 Wealth Achieved"]
+          </pre>
 
           <h2>The Rule of 72</h2>
 
@@ -95,6 +126,23 @@ Where:
             <li>At 8% return → money doubles every <strong>9 years</strong></li>
             <li>At 10% return → money doubles every <strong>7.2 years</strong></li>
           </ul>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Annual Return / Rate</th>
+                <th>Years to Double (Rule of 72)</th>
+                <th>Context</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>4%</td><td>18 years</td><td>Conservative bonds</td></tr>
+              <tr><td>6%</td><td>12 years</td><td>Balanced portfolio</td></tr>
+              <tr><td>8%</td><td>9 years</td><td>Broad stock market (historical avg)</td></tr>
+              <tr><td>10%</td><td>7.2 years</td><td>S&amp;P 500 long-run average</td></tr>
+              <tr><td>24%</td><td>3 years</td><td>⚠️ Typical credit card APR — debt doubles fast</td></tr>
+            </tbody>
+          </table>
 
           <p>This also works in reverse to illustrate the cost of high-interest debt. A credit card charging 24% interest doubles the amount you owe every three years if you're only making minimum payments.</p>
 

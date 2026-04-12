@@ -412,6 +412,59 @@ a:hover {
 }
 
 /* ===========================
+   Tables
+   =========================== */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  font-size: 0.92rem;
+  overflow-x: auto;
+  display: block;
+}
+
+.prose thead {
+  background: rgba(124, 58, 237, 0.18);
+}
+
+.prose th {
+  text-align: left;
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 2px solid var(--accent-2);
+  white-space: nowrap;
+}
+
+.prose td {
+  padding: 0.6rem 1rem;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.prose tr:last-child td {
+  border-bottom: none;
+}
+
+.prose tbody tr:hover {
+  background: rgba(167, 139, 250, 0.06);
+}
+
+/* ===========================
+   Mermaid Diagrams
+   =========================== */
+.prose .mermaid {
+  background: #0d0d1a;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+  text-align: center;
+}
+
+/* ===========================
    Responsive
    =========================== */
 @media (max-width: 600px) {

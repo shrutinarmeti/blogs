@@ -1,6 +1,6 @@
 # Shruti Narmeti — Blog
 
-A static blog website hosted alongside [shrutinarmeti.github.io](https://shrutinarmeti.github.io).
+A static finance blog hosted alongside [shrutinarmeti.github.io](https://shrutinarmeti.github.io).
 
 ## Structure
 
@@ -8,9 +8,9 @@ A static blog website hosted alongside [shrutinarmeti.github.io](https://shrutin
 index.html          # Blog listing page
 styles.css          # Shared stylesheet
 posts/
-  getting-started-with-rag.html
-  building-ci-cd-with-github-actions.html
-  why-i-love-typescript.html
+  the-power-of-compound-interest.html
+  index-funds-vs-active-management.html
+  building-an-emergency-fund.html
 ```
 
 ## Adding a New Post

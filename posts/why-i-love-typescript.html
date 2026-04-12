@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why I Love TypeScript — Shruti Narmeti</title>
+  <meta name="description" content="TypeScript has transformed how I write JavaScript — here's why static typing is worth the setup cost." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="https://shrutinarmeti.github.io" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Portfolio
+      </a>
+      <span class="site-title">Shruti<span>.</span>Blogs</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== POST HEADER ===== -->
+    <div class="post-header">
+      <div class="container">
+        <div class="post-meta">
+          <time datetime="2025-01-05">January 5, 2025</time>
+          <span>·</span>
+          <span>6 min read</span>
+          <div class="tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Web Dev</span>
+          </div>
+        </div>
+        <h1>Why I Love TypeScript (And You Should Too)</h1>
+        <p class="description">From catching subtle bugs at compile time to making large codebases maintainable, here's why static typing is worth the setup cost.</p>
+      </div>
+    </div>
+
+    <!-- ===== POST CONTENT ===== -->
+    <section class="post-content">
+      <div class="container">
+        <article class="prose">
+
+          <p>I resisted TypeScript for a long time. Adding a compilation step to JavaScript felt like unnecessary ceremony, and I was productive enough with plain JS. Then I inherited a 30,000-line Node.js codebase and changed my mind within a week.</p>
+
+          <p>TypeScript doesn't just catch bugs — it changes how you think about and design code. Here's what won me over.</p>
+
+          <h2>The Compiler Is Your First Reviewer</h2>
+
+          <p>JavaScript's dynamism means a whole class of bugs only surfaces at runtime — often in production. TypeScript moves those errors to your editor:</p>
+
+          <pre><code>// JavaScript — this silently does the wrong thing
+function greet(user) {
+  return "Hello, " + user.nane; // typo: nane instead of name
+}
+
+// TypeScript — red squiggle immediately
+function greet(user: { name: string }): string {
+  return "Hello, " + user.nane; // ❌ Property 'nane' does not exist
+}</code></pre>
+
+          <p>This feedback loop — error in editor, not in prod — is incredibly valuable at scale.</p>
+
+          <h2>Types as Documentation</h2>
+
+          <p>When a function signature tells you exactly what it accepts and returns, you don't need to read the implementation to use it. Consider:</p>
+
+          <pre><code>// What does this return? Could be anything.
+function fetchUser(id) { ... }
+
+// Self-documenting
+async function fetchUser(id: string): Promise&lt;User | null&gt; { ... }</code></pre>
+
+          <p>Types are documentation that <em>can't go stale</em> because the compiler enforces them.</p>
+
+          <h2>Refactoring Becomes Fearless</h2>
+
+          <p>Renaming a field in a JavaScript object means searching your codebase with grep and hoping you caught everything. In TypeScript, rename the property and every call site lights up red. Your refactoring surface is explicit.</p>
+
+          <blockquote>
+            <p>The ROI of TypeScript compounds over time. The larger and older the codebase, the more it pays off.</p>
+          </blockquote>
+
+          <h2>Gradual Adoption</h2>
+
+          <p>You don't have to rewrite everything. TypeScript is a superset of JavaScript, so you can:</p>
+
+          <ul>
+            <li>Rename files from <code>.js</code> to <code>.ts</code> one at a time.</li>
+            <li>Start with <code>"strict": false</code> and tighten over time.</li>
+            <li>Use <code>// @ts-check</code> in plain <code>.js</code> files to get basic type inference without renaming.</li>
+          </ul>
+
+          <h2>The Type System Is Surprisingly Expressive</h2>
+
+          <p>Beyond simple types, TypeScript supports generics, union types, intersection types, conditional types, and mapped types — enough to model complex domain logic precisely:</p>
+
+          <pre><code>type ApiResponse&lt;T&gt; =
+  | { status: "ok"; data: T }
+  | { status: "error"; message: string };
+
+function handleResponse&lt;T&gt;(res: ApiResponse&lt;T&gt;): T | never {
+  if (res.status === "ok") return res.data;
+  throw new Error(res.message);
+}</code></pre>
+
+          <h2>Tooling Is First-Class</h2>
+
+          <p>VS Code's TypeScript integration gives you autocomplete, inline docs, find-all-references, and go-to-definition that just works — even in <code>.js</code> files, because VS Code uses TypeScript's language server under the hood.</p>
+
+          <h2>The Verdict</h2>
+
+          <p>TypeScript adds a small upfront cost (configuration, type annotations, a compile step) but pays dividends in reliability, maintainability, and developer experience — especially on teams and long-lived projects. If you're writing JavaScript for anything beyond a quick script, I'd strongly recommend giving it a real try.</p>
+
+          <hr />
+
+          <p>Reach me at <a href="https://shrutinarmeti.github.io">shrutinarmeti.github.io</a> if you want to talk types.</p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== POST NAV ===== -->
+  <div class="post-nav">
+    <div class="container">
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        All posts
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

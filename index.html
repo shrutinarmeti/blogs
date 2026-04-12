@@ -12,28 +12,37 @@
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
-  <header class="site-header">
-    <div class="container">
-      <a href="https://shrutinarmeti.github.io" class="back-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        Back to Portfolio
-      </a>
-      <span class="site-title">Shruti<span>.</span>Blogs</span>
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="nav-inner">
+      <a href="https://shrutinarmeti.github.io" class="nav-logo">Shruti Narmeti</a>
+      <ul class="nav-links">
+        <li><a href="https://shrutinarmeti.github.io/#about">About</a></li>
+        <li><a href="https://shrutinarmeti.github.io/#skills">Skills</a></li>
+        <li><a href="https://shrutinarmeti.github.io/#experience">Experience</a></li>
+        <li><a href="https://shrutinarmeti.github.io/#education">Education</a></li>
+        <li><a href="https://shrutinarmeti.github.io/#certifications">Certifications</a></li>
+        <li><a href="https://shrutinarmeti.github.io/#contact">Contact</a></li>
+        <li><a href="https://shrutinarmeti.github.io/blogs/" class="active">Blogs</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </header>
+  </nav>
 
   <!-- ===== HERO ===== -->
   <main>
     <section class="hero">
       <div class="container">
-        <h1>My <span class="gradient">Blog</span></h1>
+        <h1>My Blog</h1>
         <p>Thoughts on personal finance, investing, and building long-term wealth.</p>
       </div>
     </section>
 
     <!-- ===== BLOG LIST ===== -->
-    <section class="container">
+    <section class="blog-section">
+    <div class="container">
       <div class="blog-grid">
         <!-- 2026-04-12 -->
         <article class="blog-card">
@@ -129,15 +138,15 @@
         </article>
 
       </div>
+    </div>
     </section>
   </main>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a>. All rights reserved.</p>
-    </div>
+  <footer>
+    <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a> · Somerset, NJ · Built with ❤️</p>
   </footer>
 
+  <script src="scripts/nav.js"></script>
 </body>
 </html>

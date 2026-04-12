@@ -1,123 +1,117 @@
-/* ===========================
-   Global Reset & Variables
-   =========================== */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* ============================================
+   SHRUTI NARMETI – Blogs Stylesheet
+   (matches shrutinarmeti.github.io style)
+   ============================================ */
 
+/* ---------- CSS Variables ---------- */
 :root {
-  --bg: #0f0f1a;
-  --bg-card: #1a1a2e;
-  --bg-card-hover: #16213e;
-  --accent: #a78bfa;
-  --accent-2: #7c3aed;
-  --text: #e2e8f0;
-  --text-muted: #94a3b8;
-  --border: #2d2d4e;
-  --tag-bg: #2d2255;
-  --tag-text: #c4b5fd;
+  --primary: #1a3a5c;
+  --accent: #2e80ce;
+  --accent-light: #5aa8e6;
+  --bg: #f7f9fc;
+  --white: #ffffff;
+  --text: #2d3748;
+  --text-muted: #718096;
+  --border: #e2e8f0;
+  --card-bg: #ffffff;
+  --section-alt: #eef4fb;
   --radius: 12px;
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --transition: 0.3s ease;
+  --max-width: 1100px;
+  --content-width: 860px;
+  --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
   --font-mono: 'Fira Code', 'Cascadia Code', monospace;
-  --max-width: 860px;
 }
 
-/* ===========================
-   Typography & Base
-   =========================== */
-html {
-  scroll-behavior: smooth;
-}
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-sans);
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
-  min-height: 100vh;
+  font-size: 16px;
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: color 0.2s;
-}
+a { color: var(--accent); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--accent-light); }
 
-a:hover {
-  color: #c4b5fd;
-}
+ul { list-style: none; }
 
-/* ===========================
-   Layout
-   =========================== */
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
+/* ---------- Layout helpers ---------- */
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
 
-/* ===========================
-   Header / Nav
-   =========================== */
-.site-header {
-  border-bottom: 1px solid var(--border);
-  padding: 1.2rem 0;
-  position: sticky;
-  top: 0;
-  background: rgba(15, 15, 26, 0.92);
+/* ---------- Navigation ---------- */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  z-index: 100;
+  border-bottom: 1px solid var(--border);
+  transition: box-shadow var(--transition);
 }
+nav.scrolled { box-shadow: 0 2px 16px rgba(0,0,0,0.08); }
 
-.site-header .container {
+.nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  height: 64px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-.back-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  padding: 0.4rem 0.9rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  transition: color 0.2s, border-color 0.2s, background 0.2s;
-  white-space: nowrap;
+.nav-logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--primary);
+  letter-spacing: -0.5px;
 }
+.nav-logo:hover { color: var(--accent); }
 
-.back-btn:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-  background: rgba(167, 139, 250, 0.08);
+.nav-links {
+  display: flex;
+  gap: 28px;
 }
-
-.back-btn svg {
-  flex-shrink: 0;
-}
-
-.site-title {
-  font-size: 1.1rem;
-  font-weight: 700;
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
   color: var(--text);
-  letter-spacing: -0.01em;
+  position: relative;
+  padding-bottom: 2px;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 2px;
+  background: var(--accent);
+  transition: width var(--transition);
+}
+.nav-links a:hover::after,
+.nav-links a.active::after { width: 100%; }
+.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+/* Hamburger */
+.nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+.nav-toggle span {
+  display: block; width: 24px; height: 2px;
+  background: var(--primary);
+  transition: all var(--transition);
+  border-radius: 2px;
 }
 
-.site-title span {
-  color: var(--accent);
-}
-
-/* ===========================
-   Hero / Page Intro
-   =========================== */
+/* ---------- Hero (blogs listing page) ---------- */
 .hero {
-  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, var(--primary) 0%, #1e5291 60%, var(--accent) 100%);
+  color: var(--white);
+  padding: 100px 0 60px;
   text-align: center;
 }
 
@@ -127,46 +121,43 @@ a:hover {
   letter-spacing: -0.03em;
   line-height: 1.2;
   margin-bottom: 0.75rem;
-}
-
-.hero h1 .gradient {
-  background: linear-gradient(135deg, var(--accent) 0%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--white);
 }
 
 .hero p {
-  color: var(--text-muted);
   font-size: 1.05rem;
   max-width: 500px;
   margin: 0 auto;
+  opacity: 0.85;
 }
 
-/* ===========================
-   Blog List Grid
-   =========================== */
+/* ---------- Blog listing section ---------- */
+.blog-section {
+  padding: 48px 0 80px;
+}
+
+/* ---------- Blog List Grid ---------- */
 .blog-grid {
   display: grid;
   gap: 1.25rem;
-  padding-bottom: 4rem;
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
 .blog-card {
-  background: var(--bg-card);
+  background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.6rem 1.8rem;
-  transition: border-color 0.2s, transform 0.2s, background 0.2s;
+  transition: transform var(--transition), box-shadow var(--transition);
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
 
 .blog-card:hover {
-  border-color: var(--accent-2);
-  background: var(--bg-card-hover);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
 }
 
 .blog-card-meta {
@@ -193,7 +184,7 @@ a:hover {
 
 .blog-card h2 a {
   color: var(--text);
-  transition: color 0.2s;
+  transition: color var(--transition);
 }
 
 .blog-card h2 a:hover {
@@ -218,13 +209,13 @@ a:hover {
 }
 
 .tag {
-  background: var(--tag-bg);
-  color: var(--tag-text);
-  font-size: 0.75rem;
+  background: var(--section-alt);
+  color: var(--accent);
+  border: 1px solid #c3ddf5;
+  font-size: 0.78rem;
   font-weight: 500;
-  padding: 0.2rem 0.65rem;
-  border-radius: 999px;
-  letter-spacing: 0.02em;
+  padding: 4px 10px;
+  border-radius: 50px;
 }
 
 .read-more {
@@ -239,16 +230,16 @@ a:hover {
 }
 
 .read-more:hover {
+  color: var(--accent-light);
   gap: 0.5rem;
 }
 
-/* ===========================
-   Blog Post Page
-   =========================== */
+/* ---------- Blog Post Page ---------- */
 .post-header {
-  padding: 3.5rem 0 2rem;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 2.5rem;
+  background: linear-gradient(135deg, var(--primary) 0%, #1e5291 60%, var(--accent) 100%);
+  color: var(--white);
+  padding: 100px 0 2.5rem;
+  margin-bottom: 0;
 }
 
 .post-header .post-meta {
@@ -256,7 +247,7 @@ a:hover {
   align-items: center;
   gap: 0.75rem;
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.75);
   flex-wrap: wrap;
   margin-bottom: 1rem;
 }
@@ -267,19 +258,25 @@ a:hover {
   letter-spacing: -0.03em;
   line-height: 1.25;
   margin-bottom: 1rem;
+  color: var(--white);
 }
 
 .post-header .description {
   font-size: 1.05rem;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.8);
   max-width: 640px;
 }
 
-/* ===========================
-   Post Content
-   =========================== */
+.post-header .tags .tag {
+  background: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.9);
+  border-color: rgba(255,255,255,0.3);
+}
+
+/* ---------- Post Content ---------- */
 .post-content {
-  padding-bottom: 4rem;
+  padding: 2.5rem 0 4rem;
+  background: var(--bg);
 }
 
 .prose {
@@ -291,14 +288,14 @@ a:hover {
   font-weight: 700;
   letter-spacing: -0.02em;
   margin: 2.5rem 0 0.75rem;
-  color: var(--text);
+  color: var(--primary);
 }
 
 .prose h3 {
   font-size: 1.15rem;
   font-weight: 600;
   margin: 2rem 0 0.5rem;
-  color: var(--text);
+  color: var(--primary);
 }
 
 .prose p {
@@ -323,7 +320,7 @@ a:hover {
 }
 
 .prose pre {
-  background: #0d0d1a;
+  background: #1e2a3a;
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1.2rem 1.4rem;
@@ -337,7 +334,7 @@ a:hover {
 .prose code {
   font-family: var(--font-mono);
   font-size: 0.88em;
-  background: rgba(167, 139, 250, 0.12);
+  background: var(--section-alt);
   color: var(--accent);
   padding: 0.1em 0.4em;
   border-radius: 4px;
@@ -351,10 +348,10 @@ a:hover {
 }
 
 .prose blockquote {
-  border-left: 3px solid var(--accent-2);
+  border-left: 3px solid var(--accent);
   padding: 0.75rem 1.25rem;
   margin: 1.5rem 0;
-  background: rgba(124, 58, 237, 0.08);
+  background: var(--section-alt);
   border-radius: 0 8px 8px 0;
   font-style: italic;
   color: var(--text-muted);
@@ -371,9 +368,7 @@ a:hover {
   text-underline-offset: 3px;
 }
 
-/* ===========================
-   Post Navigation
-   =========================== */
+/* ---------- Post Navigation ---------- */
 .post-nav {
   padding: 1.5rem 0 3rem;
   border-top: 1px solid var(--border);
@@ -388,7 +383,7 @@ a:hover {
   padding: 0.5rem 1rem;
   border: 1px solid var(--border);
   border-radius: 999px;
-  transition: color 0.2s, border-color 0.2s;
+  transition: color var(--transition), border-color var(--transition);
 }
 
 .post-nav a:hover {
@@ -396,24 +391,18 @@ a:hover {
   border-color: var(--accent);
 }
 
-/* ===========================
-   Footer
-   =========================== */
-.site-footer {
-  border-top: 1px solid var(--border);
-  padding: 1.5rem 0;
+/* ---------- Footer ---------- */
+footer {
+  background: #0f2540;
+  color: rgba(255,255,255,0.5);
   text-align: center;
-  font-size: 0.8rem;
-  color: var(--text-muted);
+  padding: 28px 24px;
+  font-size: 0.82rem;
 }
+footer a { color: rgba(255,255,255,0.75); }
+footer a:hover { color: var(--white); }
 
-.site-footer a {
-  color: var(--accent);
-}
-
-/* ===========================
-   Tables
-   =========================== */
+/* ---------- Tables ---------- */
 .prose table {
   width: 100%;
   border-collapse: collapse;
@@ -424,15 +413,15 @@ a:hover {
 }
 
 .prose thead {
-  background: rgba(124, 58, 237, 0.18);
+  background: var(--section-alt);
 }
 
 .prose th {
   text-align: left;
   padding: 0.65rem 1rem;
   font-weight: 600;
-  color: var(--text);
-  border-bottom: 2px solid var(--accent-2);
+  color: var(--primary);
+  border-bottom: 2px solid var(--accent);
   white-space: nowrap;
 }
 
@@ -448,14 +437,12 @@ a:hover {
 }
 
 .prose tbody tr:hover {
-  background: rgba(167, 139, 250, 0.06);
+  background: var(--section-alt);
 }
 
-/* ===========================
-   Mermaid Diagrams
-   =========================== */
+/* ---------- Mermaid Diagrams ---------- */
 .prose .mermaid {
-  background: #0d0d1a;
+  background: var(--section-alt);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 1.5rem 1rem;
@@ -464,11 +451,21 @@ a:hover {
   text-align: center;
 }
 
-/* ===========================
-   Responsive
-   =========================== */
-@media (max-width: 600px) {
-  .site-header .container {
-    flex-wrap: wrap;
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 64px; left: 0; right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: flex; }
+  .hero { padding: 90px 0 48px; }
+  .post-header { padding: 90px 0 2rem; }
 }

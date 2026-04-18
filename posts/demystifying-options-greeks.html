@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demystifying Options Greeks: A Roadmap for Smarter Options Trading — Shruti Narmeti</title>
+  <meta name="description" content="Get a clear understanding of options Greeks—Delta, Gamma, Theta, Vega, and Rho—and learn how they can help you craft smarter options trading strategies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="https://shrutinarmeti.github.io" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Portfolio
+      </a>
+      <span class="site-title">Shruti<span>.</span>Blogs</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== POST HEADER ===== -->
+    <div class="post-header">
+      <div class="container">
+        <div class="post-meta">
+          <time datetime="2026-04-18">April 18, 2026</time>
+          <span>·</span>
+          <span>9 min read</span>
+          <div class="tags">
+            <span class="tag">Options</span>
+            <span class="tag">Trading Strategies</span>
+            <span class="tag">Risk Management</span>
+          </div>
+        </div>
+        <h1>Demystifying Options Greeks: A Roadmap for Smarter Options Trading</h1>
+        <p class="description">Get a clear understanding of options Greeks—Delta, Gamma, Theta, Vega, and Rho—and learn how they can help you craft smarter options trading strategies.</p>
+      </div>
+    </div>
+
+    <!-- ===== POST CONTENT ===== -->
+    <section class="post-content">
+      <div class="container">
+        <article class="prose">
+
+<p>Options trading often feels like a labyrinth for new investors. Terms like "Delta," "Gamma," "Theta," "Vega," and "Rho"—commonly known as the "Greeks"—might sound intimidating at first, but understanding these metrics is essential for mastering the art of options trading. These Greeks quantify the sensitivity of an option's price to various market factors, and they can be your best friends when it comes to risk management and strategy optimization.</p>
+
+<p>In this article, we'll walk you through each of the primary Greeks, explain what they represent, and show you how to use them to make smarter trading decisions.</p>
+
+<h2>What Are Options Greeks?</h2>
+
+<p>Options Greeks are mathematical measures that indicate how the price of an option is expected to change in response to various factors. These metrics are derived from the Black-Scholes model and other option pricing formulas. Here's a quick overview:</p>
+
+<ul>
+  <li><strong>Delta:</strong> Measures the sensitivity of an option's price to a $1 change in the underlying asset's price.</li>
+  <li><strong>Gamma:</strong> Measures the rate of change of Delta as the underlying asset's price changes.</li>
+  <li><strong>Theta:</strong> Measures the rate of time decay of an option's price.</li>
+  <li><strong>Vega:</strong> Measures the sensitivity of an option's price to changes in implied volatility.</li>
+  <li><strong>Rho:</strong> Measures the sensitivity of an option's price to changes in interest rates.</li>
+</ul>
+
+<p>Each Greek serves a specific purpose, helping traders manage risk and make informed decisions. Let's dive deeper into each one.</p>
+
+<h2>Delta: The Sensitivity to Price Movements</h2>
+
+<p>Delta is perhaps the most intuitive of all the Greeks. It measures how much an option’s price will change for every $1 move in the underlying asset. For instance, a call option with a Delta of 0.6 means that if the underlying asset's price increases by $1, the call option's price is expected to rise by $0.60.</p>
+
+<h3>Key Insights:</h3>
+<ul>
+  <li><strong>Call Options:</strong> Delta ranges from 0 to 1. A higher Delta means the option behaves more like the underlying asset.</li>
+  <li><strong>Put Options:</strong> Delta ranges from -1 to 0, as the value of puts increases when the underlying price falls.</li>
+  <li><strong>Approximation of Probability:</strong> Delta can also serve as an approximation of the probability that the option will expire in-the-money. For instance, a Delta of 0.7 suggests a 70% chance of expiring in-the-money.</li>
+</ul>
+
+<p>Traders often use Delta to hedge their portfolios. For example, if you own 100 shares of a stock, you could sell one call option with a Delta of -1 to create a "Delta-neutral" position, minimizing the impact of price movements.</p>
+
+<h2>Gamma: The Rate of Delta's Change</h2>
+
+<p>Gamma measures the rate at which Delta changes in response to price movements of the underlying asset. It's a second-order derivative of the option's price.</p>
+
+<h3>Key Insights:</h3>
+<ul>
+  <li><strong>Stability:</strong> High Gamma means Delta is more sensitive to price changes, making the option's price more volatile.</li>
+  <li><strong>At-the-Money Options:</strong> Gamma tends to be highest for at-the-money options and decreases as options move deeper in or out of the money.</li>
+</ul>
+
+<p>If you are managing a portfolio with multiple options, monitoring Gamma helps you understand how quickly your Delta hedges might need adjustment. High Gamma can lead to sudden and unexpected changes in your portfolio's risk profile.</p>
+
+<h2>Theta: The Cost of Time</h2>
+
+<p>Theta measures the rate at which an option's price decreases as it approaches expiration, all else being equal. This is also known as "time decay." Since options are wasting assets, Theta is always negative for long options and positive for short options.</p>
+
+<h3>Key Insights:</h3>
+<ul>
+  <li><strong>Closer to Expiration:</strong> Time decay accelerates as the option approaches its expiration date, particularly for at-the-money options.</li>
+  <li><strong>Implications for Strategy:</strong> Long option holders lose value over time if the underlying asset doesn't move significantly. On the flip side, Theta works in favor of options sellers, who can profit from this decay.</li>
+</ul>
+
+<p>Options traders often use Theta as a tool to decide whether to hold or close a position, especially when expiration is near.</p>
+
+<h2>Vega: Sensitivity to Volatility</h2>
+
+<p>Vega measures how sensitive an option's price is to a 1% change in implied volatility. Higher volatility generally increases the value of options because the potential for larger price swings raises the probability of significant gains.</p>
+
+<h3>Key Insights:</h3>
+<ul>
+  <li><strong>High Vega:</strong> Options with a longer time to expiration generally have higher Vega.</li>
+  <li><strong>Event-Driven Volatility:</strong> Earnings reports or economic announcements can increase implied volatility and, consequently, the value of options.</li>
+</ul>
+
+<p>Vega is particularly useful for traders who specialize in volatility strategies, such as straddles and strangles, where the aim is to capitalize on changes in implied volatility.</p>
+
+<h2>Rho: The Interest Rate Connection</h2>
+
+<p>Rho measures the sensitivity of an option's price to changes in interest rates. While Rho is often less significant than the other Greeks, it becomes important in certain environments, such as when interest rates are rising or falling dramatically.</p>
+
+<h3>Key Insights:</h3>
+<ul>
+  <li><strong>Call Options:</strong> Higher interest rates generally increase the value of call options.</li>
+  <li><strong>Put Options:</strong> Higher interest rates generally decrease the value of put options.</li>
+</ul>
+
+<p>For most retail traders, Rho may not play a significant day-to-day role, but it becomes critical for institutional traders and those holding options positions over long periods.</p>
+
+<h2>Putting It All Together: The Greeks in Action</h2>
+
+<p>Understanding options Greeks allows you to create more informed and balanced strategies. Let’s walk through an example to illustrate how these metrics interact:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Greek</th>
+      <th>Call Option</th>
+      <th>Put Option</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Delta</td>
+      <td>0.6</td>
+      <td>-0.4</td>
+    </tr>
+    <tr>
+      <td>Gamma</td>
+      <td>0.08</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Theta</td>
+      <td>-0.02</td>
+      <td>-0.02</td>
+    </tr>
+    <tr>
+      <td>Vega</td>
+      <td>0.10</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Rho</td>
+      <td>0.05</td>
+      <td>-0.05</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In this scenario, if the stock price rises by $1, the call option’s price will increase by $0.60, and the put option’s price will decrease by $0.40. However, because the Gamma is 0.08, these Deltas will adjust slightly if the stock price moves further. Meanwhile, the options lose $0.02 each day due to Theta, but their value could increase by $0.10 for every 1% rise in implied volatility due to Vega.</p>
+
+<h2>Key Takeaways for Traders</h2>
+
+<ol>
+  <li><strong>Use Delta for Directional Bias:</strong> Choose options with higher Delta for directional bets on the underlying asset.</li>
+  <li><strong>Watch Gamma for Stability:</strong> Be cautious of high Gamma, as it can lead to rapid changes in your position's risk profile.</li>
+  <li><strong>Factor in Time Decay:</strong> Monitor Theta, especially for long options positions, to minimize losses from time decay.</li>
+  <li><strong>Capitalize on Volatility:</strong> Use Vega to gauge the impact of volatility changes and employ strategies like straddles or strangles when appropriate.</li>
+  <li><strong>Mind Interest Rates:</strong> Keep an eye on Rho in a changing interest rate environment, especially for longer-term options.</li>
+</ol>
+
+<p>By mastering the Greeks, you can become a more strategic and confident options trader, capable of navigating the complexities of the market with ease. Whether you're hedging a portfolio or pursuing speculative opportunities, these metrics will help you make data-driven decisions.</p>
+
+<hr />
+<p>Questions or thoughts? Find me at <a href="https://shrutinarmeti.github.io">shrutinarmeti.github.io</a>.</p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== POST NAV ===== -->
+  <div class="post-nav">
+    <div class="container">
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        All posts
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

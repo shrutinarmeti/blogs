@@ -9,7 +9,8 @@
     "The Magic of Tax-Loss Harvesting: Turning Market Losses into Tax Wins",
     "The Basics of Portfolio Rebalancing: Why, When, and How to Do It",
     "The Rise of Thematic Investing: How to Ride Megatrends in 2026",
-    "Behavioral Finance 101: How Cognitive Biases Impact Your Investment Decisions"
+    "Behavioral Finance 101: How Cognitive Biases Impact Your Investment Decisions",
+    "Demystifying Options Greeks: A Roadmap for Smarter Options Trading"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -21,6 +22,7 @@
     "tax-loss-harvesting-strategy",
     "basics-of-portfolio-rebalancing",
     "the-rise-of-thematic-investing",
-    "behavioral-finance-cognitive-biases"
+    "behavioral-finance-cognitive-biases",
+    "demystifying-options-greeks"
   ]
 }

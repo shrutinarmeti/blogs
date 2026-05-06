@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Use Implied Volatility in Options Trading: A Practical Guide — Shruti Narmeti</title>
+  <meta name="description" content="Learn how implied volatility can influence options pricing, strategies, and decision-making in your options trading journey." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="https://shrutinarmeti.github.io" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Portfolio
+      </a>
+      <span class="site-title">Shruti<span>.</span>Blogs</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== POST HEADER ===== -->
+    <div class="post-header">
+      <div class="container">
+        <div class="post-meta">
+          <time datetime="2026-05-06">May 6, 2026</time>
+          <span>·</span>
+          <span>8 min read</span>
+          <div class="tags">
+            <span class="tag">Options</span>
+            <span class="tag">Volatility</span>
+            <span class="tag">Trading Strategies</span>
+          </div>
+        </div>
+        <h1>How to Use Implied Volatility in Options Trading: A Practical Guide</h1>
+        <p class="description">Learn how implied volatility can influence options pricing, strategies, and decision-making in your options trading journey.</p>
+      </div>
+    </div>
+
+    <!-- ===== POST CONTENT ===== -->
+    <section class="post-content">
+      <div class="container">
+        <article class="prose">
+
+<p>Implied volatility (IV) is one of the most critical metrics in options trading, yet it is often misunderstood by novice traders. Understanding IV can provide you with an edge when determining whether an option is overpriced or underpriced and deciding on the optimal strategy for your market outlook. In this article, we will break down the concept of implied volatility, explain its impact on options pricing, and explore how to incorporate it into your trading decisions.</p>
+
+<h2>What is Implied Volatility?</h2>
+<p>Implied volatility is a metric derived from an option's price that reflects the market's expectations for future volatility in the underlying asset over the life of the option. Unlike historical volatility, which measures past price fluctuations, IV is forward-looking. It represents the market's consensus on the magnitude of potential price movements, rather than their direction.</p>
+
+<h3>How is Implied Volatility Calculated?</h3>
+<p>Implied volatility is not directly observed; instead, it is derived using an options pricing model, such as the Black-Scholes model. These models take the following inputs to calculate an option's theoretical value:</p>
+<ul>
+  <li>Current price of the underlying asset</li>
+  <li>Strike price of the option</li>
+  <li>Time to expiration</li>
+  <li>Risk-free interest rate</li>
+  <li>Dividend yield</li>
+  <li>Implied volatility (as a variable to be solved)</li>
+</ul>
+<p>By inputting the market price of the option into the model, traders back out the level of IV that makes the model's theoretical price equal to the market price. This is why IV is often referred to as the "market's consensus view of future volatility."</p>
+
+<h2>Why Does Implied Volatility Matter?</h2>
+<p>Implied volatility influences the price of options in significant ways, as it directly impacts the extrinsic (time value) component of an option. Here's why IV is so important:</p>
+
+<h3>1. High IV Increases Option Prices</h3>
+<p>When implied volatility is high, the premium for both calls and puts increases. This is because the likelihood of large price swings in the underlying asset (and, thus, favorable movements for the option holder) is expected to be higher, making the option more valuable.</p>
+
+<h3>2. Low IV Decreases Option Prices</h3>
+<p>Conversely, when IV is low, options premiums tend to shrink because the market anticipates smaller price movements in the underlying asset over the option's life.</p>
+
+<h3>3. Helps Identify Overpriced or Underpriced Options</h3>
+<p>Comparing an option's current IV to its historical average (known as historical implied volatility) can help you determine whether the option is overpriced or underpriced. For instance:</p>
+<ul>
+  <li>If current IV is significantly higher than historical IV, the option is likely expensive.</li>
+  <li>If current IV is significantly lower than historical IV, the option is more likely to be undervalued.</li>
+</ul>
+
+<h2>Using Implied Volatility in Your Trading Strategy</h2>
+<p>Knowing how to use implied volatility can lead to more informed trading decisions. Here are practical ways to incorporate IV into your trading strategies:</p>
+
+<h3>1. Determine the Best Strategy</h3>
+<p>The level of implied volatility can guide your choice of options strategies. For instance:</p>
+<ul>
+  <li><strong>High IV Environment:</strong> Consider strategies that benefit from a decline in IV, such as selling options or employing credit spreads (e.g., iron condors, bear call spreads).</li>
+  <li><strong>Low IV Environment:</strong> Look at strategies that are positively impacted by rising IV, such as buying options or using debit spreads (e.g., long straddles, long strangles).</li>
+</ul>
+
+<h3>2. Anticipate Volatility Crush Events</h3>
+<p>Events like earnings announcements or product launches often lead to a spike in IV before the event and a subsequent "volatility crush" afterward. This is because uncertainty is resolved once the event passes. Traders can capitalize on these patterns by selling options before the event or buying them after the crush.</p>
+
+<h3>3. Gauge Risk and Reward</h3>
+<p>Implied volatility can be used to gauge the risk-reward profile of a trade. Options with high IV carry higher premiums but also higher risks, as the underlying asset must move significantly to justify the inflated premium.</p>
+
+<h2>Visualizing the Impact of Implied Volatility</h2>
+<p>To provide a clearer picture of how implied volatility impacts options pricing, consider the following table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Implied Volatility</th>
+      <th>Call Option Premium</th>
+      <th>Put Option Premium</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20%</td>
+      <td>$2.50</td>
+      <td>$2.40</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>$4.20</td>
+      <td>$4.10</td>
+    </tr>
+    <tr>
+      <td>60%</td>
+      <td>$6.50</td>
+      <td>$6.40</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This table illustrates how increasing IV amplifies both call and put premiums due to the heightened expectation of price swings in the underlying asset.</p>
+
+<h2>Common Pitfalls to Avoid</h2>
+<p>While implied volatility is a powerful tool, there are several common mistakes traders should avoid:</p>
+
+<ol>
+  <li><strong>Ignoring the Role of Time Decay:</strong> High IV does not eliminate the impact of time decay. Options lose value as they approach expiration, especially if the underlying asset remains stagnant.</li>
+  <li><strong>Overlooking Changes in IV:</strong> Implied volatility is not constant and can fluctuate rapidly. Always consider how IV might change over the life of your trade.</li>
+  <li><strong>Focusing Solely on IV:</strong> While important, IV is just one factor in options pricing. Other elements, such as delta, gamma, and the underlying stock's movement, are also crucial.</li>
+</ol>
+
+<h2>Conclusion</h2>
+<p>Implied volatility is a cornerstone of effective options trading. By understanding what IV represents, how it impacts options pricing, and how to use it in your strategies, you can make more informed and profitable trading decisions. Remember to consider IV in conjunction with other factors like time decay and the Greeks to develop a well-rounded trading approach.</p>
+
+<p>Have you used implied volatility in your trading strategies? Share your experiences or questions below!</p>
+
+<hr />
+<p>Questions or thoughts? Find me at <a href="https://shrutinarmeti.github.io">shrutinarmeti.github.io</a>.</p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== POST NAV ===== -->
+  <div class="post-nav">
+    <div class="container">
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        All posts
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

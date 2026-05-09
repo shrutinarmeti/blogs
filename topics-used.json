@@ -29,7 +29,8 @@
     "How to Use the Sharpe Ratio to Improve Your Investment Decisions",
     "How to Use Implied Volatility in Options Trading: A Practical Guide",
     "Financial Modeling Basics: Building a Solid Foundation for Decision-Making",
-    "The P/E Ratio Demystified: A Comprehensive Guide for Modern Investors"
+    "The P/E Ratio Demystified: A Comprehensive Guide for Modern Investors",
+    "Understanding the Kelly Criterion: A Mathematical Approach to Optimizing Investment Size"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -61,6 +62,7 @@
     "sharpe-ratio-investing-decisions",
     "using-implied-volatility-options-trading",
     "financial-modeling-basics",
-    "pe-ratio-demystified"
+    "pe-ratio-demystified",
+    "understanding-kelly-criterion"
   ]
 }

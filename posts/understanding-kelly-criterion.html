@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understanding the Kelly Criterion: A Mathematical Approach to Optimizing Investment Size — Shruti Narmeti</title>
+  <meta name="description" content="The Kelly Criterion is a mathematical formula that helps investors determine the optimal size of a bet or investment to maximize growth while minimizing risk. Learn how it works and when to apply it." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="https://shrutinarmeti.github.io" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Portfolio
+      </a>
+      <span class="site-title">Shruti<span>.</span>Blogs</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== POST HEADER ===== -->
+    <div class="post-header">
+      <div class="container">
+        <div class="post-meta">
+          <time datetime="2026-05-09">May 9, 2026</time>
+          <span>·</span>
+          <span>8 min read</span>
+          <div class="tags">
+            <span class="tag">Quantitative Finance</span>
+            <span class="tag">Risk Management</span>
+            <span class="tag">Investment Strategies</span>
+          </div>
+        </div>
+        <h1>Understanding the Kelly Criterion: A Mathematical Approach to Optimizing Investment Size</h1>
+        <p class="description">The Kelly Criterion is a mathematical formula that helps investors determine the optimal size of a bet or investment to maximize growth while minimizing risk. Learn how it works and when to apply it.</p>
+      </div>
+    </div>
+
+    <!-- ===== POST CONTENT ===== -->
+    <section class="post-content">
+      <div class="container">
+        <article class="prose">
+
+<p>When it comes to investing or trading, one of the most critical decisions is determining how much capital to allocate to a particular investment or trade. Allocate too much, and you risk catastrophic losses. Allocate too little, and you miss out on potential returns. Enter the Kelly Criterion: a mathematical formula designed to help you optimize the size of your investment to maximize long-term growth while minimizing the risk of ruin.</p>
+
+<p>In this article, we’ll break down the Kelly Criterion, explain how it works, highlight its pros and cons, and discuss how you can incorporate it into your investment strategy.</p>
+
+<hr />
+
+<h2>What is the Kelly Criterion?</h2>
+
+<p>The Kelly Criterion, or Kelly formula, is a position sizing strategy developed by John L. Kelly Jr., a researcher at AT&T’s Bell Labs, in 1956. Although initially designed for telecommunications problems, the formula found its way into the world of gambling and investing because of its ability to optimize bet sizes for maximum capital growth.</p>
+
+<p>The fundamental idea behind the Kelly Criterion is to determine the optimal fraction of your portfolio to allocate to an investment or bet, while accounting for the probability of success and the potential payout. By using this method, you aim to maximize the geometric growth rate of your capital over time, which is particularly useful for long-term investors.</p>
+
+<h3>Key Formula</h3>
+
+<pre><code>f* = (bp - q) / b</code></pre>
+
+<p>Where:</p>
+<ul>
+  <li><strong>f*</strong> = Fraction of your total capital to wager or invest</li>
+  <li><strong>b</strong> = Odds received on the bet (e.g., a 1:1 payout means b = 1)</li>
+  <li><strong>p</strong> = Probability of winning the bet</li>
+  <li><strong>q</strong> = Probability of losing the bet, which equals (1 - p)</li>
+</ul>
+
+<p>This formula tells you what percentage of your capital you should allocate to a given opportunity to maximize your long-term returns.</p>
+
+<hr />
+
+<h2>Breaking Down an Example</h2>
+
+<p>Let’s say you’re offered a bet with the following characteristics:</p>
+<ul>
+  <li>The odds are 2:1, meaning you’ll win $2 for every $1 you wager (b = 2).</li>
+  <li>Your probability of winning the bet is 60% (p = 0.6).</li>
+</ul>
+
+<p>Plugging these values into the Kelly formula:</p>
+<pre><code>f* = (bp - q) / b
+   = (2 × 0.6 - 0.4) / 2
+   = (1.2 - 0.4) / 2
+   = 0.8 / 2
+   = 0.4</code></pre>
+
+<p>The result is 0.4, or 40%. This means you should allocate 40% of your capital to this bet in order to maximize your long-term growth while maintaining a balanced risk level.</p>
+
+<hr />
+
+<h2>Advantages of the Kelly Criterion</h2>
+
+<p>The Kelly Criterion offers several benefits that make it an appealing strategy for both investors and traders:</p>
+
+<h3>1. Maximizes Long-Term Growth</h3>
+<p>The Kelly Criterion is specifically designed to optimize the growth of your portfolio by compounding returns over time. It ensures that you don’t bet too little (which would slow your growth) or too much (which could lead to significant losses).</p>
+
+<h3>2. Balances Risk and Reward</h3>
+<p>By incorporating probabilities and potential payouts into its calculation, the Kelly Criterion provides a systematic way to manage risk and reward. This is especially valuable for people looking to make calculated, data-driven decisions.</p>
+
+<h3>3. Avoids Over-Betting</h3>
+<p>One of the most common pitfalls in investing and trading is over-betting, or committing too much capital to a single opportunity. The Kelly Criterion sets a clear boundary and protects you from excessive risk-taking.</p>
+
+<hr />
+
+<h2>Drawbacks to Keep in Mind</h2>
+
+<p>While the Kelly Criterion is mathematically sound, it’s not without limitations:</p>
+
+<h3>1. Requires Accurate Probabilities</h3>
+<p>The effectiveness of the Kelly Criterion relies heavily on your ability to accurately estimate the probability of success (p) and the odds (b). If your estimates are off, your calculated investment size may not be optimal—or could even lead to losses.</p>
+
+<h3>2. High Volatility</h3>
+<p>The Kelly Criterion can result in large position sizes, especially for investments with high probabilities of success. This can lead to significant portfolio volatility, which may not be suitable for risk-averse investors.</p>
+
+<h3>3. Complexity</h3>
+<p>For the average investor, calculating probabilities and potential payouts may feel daunting. Most people are not used to thinking in terms of odds and probabilities, which can make implementing the Kelly Criterion challenging.</p>
+
+<hr />
+
+<h2>Adjusting the Kelly Criterion</h2>
+
+<p>To mitigate its drawbacks, investors often use a modified or "fractional Kelly" approach. Instead of betting the full calculated fraction (f*), they use a smaller percentage—such as half or a quarter of the recommended value. This reduces the potential volatility and risk of large drawdowns, albeit at the cost of slightly lower returns.</p>
+
+<p>For instance, using the example above, a fractional Kelly approach might suggest investing only 20% (half of 40%) of your capital rather than the full 40%.</p>
+
+<hr />
+
+<h2>When Should You Use the Kelly Criterion?</h2>
+
+<p>The Kelly Criterion is most appropriate in situations where probabilities and payoffs can be reasonably estimated. This makes it a popular strategy in areas like:</p>
+<ul>
+  <li><strong>Sports betting:</strong> Where odds are explicitly stated.</li>
+  <li><strong>Trading:</strong> When backtested data provides historical win rates and risk/reward ratios for specific strategies.</li>
+  <li><strong>Venture capital:</strong> Allocating funds to startups with known probabilities of success and expected returns.</li>
+</ul>
+
+<p>However, it’s less suitable for investments where probabilities and payouts are uncertain, such as speculative stock picks or highly volatile markets without historical data.</p>
+
+<hr />
+
+<h2>Practical Tips for Using the Kelly Criterion</h2>
+
+<p>If you’re considering implementing the Kelly Criterion in your investment strategy, here are some practical steps to follow:</p>
+
+<h3>1. Start with Reliable Data</h3>
+<p>Ensure you have accurate data to estimate probabilities and potential payoffs. This might involve analyzing historical performance, conducting research, or using statistical models.</p>
+
+<h3>2. Use Fractional Kelly for Safety</h3>
+<p>As mentioned earlier, using a fractional Kelly approach can help reduce portfolio volatility and make the strategy more palatable for risk-averse investors.</p>
+
+<h3>3. Combine with Other Risk Management Tools</h3>
+<p>The Kelly Criterion should not be used in isolation. Consider incorporating it into a broader risk management framework that includes diversification, stop-loss orders, and regular portfolio reviews.</p>
+
+<h3>4. Test Before You Commit</h3>
+<p>Before applying the Kelly Criterion to significant investments, test it on paper or with a small portion of your portfolio to see how it performs in real-world conditions.</p>
+
+<hr />
+
+<h2>Conclusion</h2>
+
+<p>The Kelly Criterion offers a mathematically elegant way to optimize position sizing and maximize long-term portfolio growth. While it’s not without its challenges—such as the need for accurate probability estimates and the potential for high volatility—it can be a valuable tool for disciplined investors and traders who value a systematic approach to risk and reward.</p>
+
+<p>By understanding its formula, benefits, and limitations, you can decide whether the Kelly Criterion aligns with your investment goals and risk tolerance. And if you’re new to the concept, starting with a fractional Kelly approach might be a prudent way to ease into it.</p>
+
+<hr />
+
+<p>Questions or thoughts? Find me at <a href="https://shrutinarmeti.github.io">shrutinarmeti.github.io</a>.</p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== POST NAV ===== -->
+  <div class="post-nav">
+    <div class="container">
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        All posts
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

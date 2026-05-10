@@ -30,7 +30,8 @@
     "How to Use Implied Volatility in Options Trading: A Practical Guide",
     "Financial Modeling Basics: Building a Solid Foundation for Decision-Making",
     "The P/E Ratio Demystified: A Comprehensive Guide for Modern Investors",
-    "Understanding the Kelly Criterion: A Mathematical Approach to Optimizing Investment Size"
+    "Understanding the Kelly Criterion: A Mathematical Approach to Optimizing Investment Size",
+    "Understanding the Magic of Forward P/E: Predicting Valuations in a Changing Market"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -63,6 +64,7 @@
     "using-implied-volatility-options-trading",
     "financial-modeling-basics",
     "pe-ratio-demystified",
-    "understanding-kelly-criterion"
+    "understanding-kelly-criterion",
+    "understanding-forward-pe"
   ]
 }

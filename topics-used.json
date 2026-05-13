@@ -33,7 +33,8 @@
     "Understanding the Kelly Criterion: A Mathematical Approach to Optimizing Investment Size",
     "Understanding the Magic of Forward P/E: Predicting Valuations in a Changing Market",
     "A Beginner's Guide to Mastering Technical Analysis: Tools and Strategies for 2026",
-    "Navigating the World of Crypto Staking: Risks and Rewards in 2026"
+    "Navigating the World of Crypto Staking: Risks and Rewards in 2026",
+    "The Role of Stop-Loss Orders in Risk Management: A Practical Guide"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -69,6 +70,7 @@
     "understanding-kelly-criterion",
     "understanding-forward-pe",
     "beginners-guide-technical-analysis-2026",
-    "crypto-staking-risks-rewards"
+    "crypto-staking-risks-rewards",
+    "stop-loss-orders-risk-management"
   ]
 }

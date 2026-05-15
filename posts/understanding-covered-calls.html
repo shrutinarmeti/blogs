@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understanding Covered Calls: A Conservative Options Strategy for Income — Shruti Narmeti</title>
+  <meta name="description" content="Learn how covered calls can enhance portfolio income while managing risk, making them a popular choice for conservative investors." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="https://shrutinarmeti.github.io" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Portfolio
+      </a>
+      <span class="site-title">Shruti<span>.</span>Blogs</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== POST HEADER ===== -->
+    <div class="post-header">
+      <div class="container">
+        <div class="post-meta">
+          <time datetime="2026-05-15">May 15, 2026</time>
+          <span>·</span>
+          <span>8 min read</span>
+          <div class="tags">
+            <span class="tag">Options</span>
+            <span class="tag">Income Investing</span>
+            <span class="tag">Risk Management</span>
+          </div>
+        </div>
+        <h1>Understanding Covered Calls: A Conservative Options Strategy for Income</h1>
+        <p class="description">Learn how covered calls can enhance portfolio income while managing risk, making them a popular choice for conservative investors.</p>
+      </div>
+    </div>
+
+    <!-- ===== POST CONTENT ===== -->
+    <section class="post-content">
+      <div class="container">
+        <article class="prose">
+
+<p>Options trading is often seen as the domain of aggressive speculators aiming for outsized gains. However, not all options strategies are high-risk or overly complex. Enter the <em>covered call</em>: a conservative options strategy designed to generate income and reduce portfolio risk. For investors seeking steady returns in a volatile market, understanding how to use covered calls effectively can be a game-changer.</p>
+
+<h2>What Is a Covered Call?</h2>
+
+<p>A covered call is an options strategy where an investor owns a stock (or an equivalent amount in ETFs or other assets) and sells call options against those holdings. By doing so, the investor earns a premium—essentially, a payment from the option buyer—for agreeing to sell their stock at a specified price (the strike price) if the option is exercised.</p>
+
+<p>The term "covered" refers to the fact that the investor already owns the underlying asset, which protects against unlimited downside risk if the option is exercised.</p>
+
+<h3>Key Components of a Covered Call</h3>
+<ul>
+  <li><strong>Underlying Asset:</strong> The stock or ETF that the investor already owns.</li>
+  <li><strong>Strike Price:</strong> The price at which the investor agrees to sell the underlying asset if the option is exercised.</li>
+  <li><strong>Premium:</strong> The payment received for selling the call option.</li>
+  <li><strong>Expiration Date:</strong> The date until which the option agreement is valid.</li>
+</ul>
+
+<h3>How It Works</h3>
+<pre class="mermaid">
+flowchart TD
+    A[Own Stock] --> B[Sell Call Options]
+    B --> C[Receive Premium]
+    C --> D{Stock Price at Expiration}
+    D -->|Above Strike Price| E[Stock Called Away]
+    D -->|Below Strike Price| F[Keep Stock + Premium]
+</pre>
+
+<p>When the stock price stays below the strike price until the option expires, the call option is not exercised. In this case, the investor keeps both the premium and the stock. If the stock price rises above the strike price, the option buyer exercises their right to purchase the stock, and the investor is obligated to sell at the strike price. While this caps the upside potential, the premium provides a buffer to offset opportunity costs.</p>
+
+<h2>When to Use a Covered Call</h2>
+
+<p>A covered call strategy is most effective in specific market conditions and for certain types of investors. Below are the ideal scenarios and investor profiles for employing this strategy:</p>
+
+<h3>1. Flat or Slightly Bullish Markets</h3>
+<p>Covered calls work best when the underlying stock is expected to trade sideways or rise modestly. The strategy generates income regardless of small price movements, but significant appreciation will be capped at the strike price.</p>
+
+<h3>2. Income-Focused Investors</h3>
+<p>If you are more interested in generating consistent income than in capital appreciation, covered calls can be a valuable tool. The premiums earned act as a supplemental income stream.</p>
+
+<h3>3. Reducing Portfolio Volatility</h3>
+<p>Because the premium reduces the effective cost basis of the stock, this strategy can act as a buffer against minor losses, thereby reducing overall portfolio volatility.</p>
+
+<h2>Benefits of Covered Calls</h2>
+
+<p>Covered calls offer several advantages, especially for conservative or income-focused investors. Here are the key benefits:</p>
+
+<ul>
+  <li><strong>Generate Income:</strong> The premium collected from selling call options adds an additional layer of income to your portfolio, making it especially valuable in low-yield environments.</li>
+  <li><strong>Reduced Risk:</strong> The premium acts as a cushion, lowering the effective cost basis of the stock and mitigating potential losses.</li>
+  <li><strong>Flexibility:</strong> You can adjust the strike price and expiration date to align with your market outlook and risk tolerance.</li>
+</ul>
+
+<h2>Risks and Limitations</h2>
+
+<p>While covered calls are considered conservative, they are not without risks. Below are some of the most important considerations:</p>
+
+<ul>
+  <li><strong>Limited Upside:</strong> If the stock price rises significantly above the strike price, you miss out on potential gains beyond the strike price.</li>
+  <li><strong>Stock Ownership Risk:</strong> Since the strategy requires owning the underlying stock, you are exposed to the same risks as any stockholder, including market downturns.</li>
+  <li><strong>Premiums Are Finite:</strong> The premium earned can help offset losses but will likely not be enough to fully mitigate a significant drop in the stock’s value.</li>
+</ul>
+
+<h2>Real-World Example</h2>
+
+<p>Let’s look at an example to see how a covered call strategy works in practice:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stock Price</td>
+      <td>$100 per share</td>
+    </tr>
+    <tr>
+      <td>Number of Shares Owned</td>
+      <td>100 shares</td>
+    </tr>
+    <tr>
+      <td>Strike Price</td>
+      <td>$105 per share</td>
+    </tr>
+    <tr>
+      <td>Premium Collected</td>
+      <td>$2 per share ($200 total)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If the stock price remains below $105 at expiration, you keep the $200 premium and the shares. Your effective cost basis for the stock drops to $98 per share ($100 - $2). If the stock price rises above $105, the option is exercised, and you sell your shares at $105, earning a total profit of $700 ($500 from the price appreciation and $200 from the premium).</p>
+
+<h2>Practical Tips for Using Covered Calls</h2>
+
+<p>Here are some practical tips to help you make the most of your covered call strategy:</p>
+
+<ol>
+  <li><strong>Choose Strike Prices Wisely:</strong> Higher strike prices offer less income but more potential for stock appreciation. Lower strike prices offer more income but cap gains at a lower level.</li>
+  <li><strong>Monitor Expirations:</strong> Be mindful of the expiration date, especially if the stock price approaches the strike price. You may need to roll the option forward to extend the strategy.</li>
+  <li><strong>Tax Implications:</strong> Consult a tax professional to understand how premiums and gains will be taxed in your country.</li>
+  <li><strong>Use Historical Volatility:</strong> Look at implied volatility levels. Higher implied volatility often translates into higher premiums but also greater risks.</li>
+  <li><strong>Start Small:</strong> If you’re new to covered calls, try the strategy with a small portion of your portfolio to gain confidence and understanding.</li>
+</ol>
+
+<h2>Is a Covered Call Strategy Right for You?</h2>
+
+<p>Covered calls are a versatile and relatively low-risk way to generate additional income, but they are not suitable for everyone. If you’re a long-term investor focused on maximizing capital gains, the capped upside may not align with your goals. However, if you’re looking for a way to generate extra income and reduce portfolio risk, covered calls could be the perfect addition to your investment toolbox.</p>
+
+<p>In the end, the decision comes down to your risk tolerance, income needs, and overall investment strategy. As always, consider consulting with a financial advisor to ensure that this strategy fits your personal financial objectives.</p>
+
+<hr />
+<p>Questions or thoughts? Find me at <a href="https://shrutinarmeti.github.io">shrutinarmeti.github.io</a>.</p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== POST NAV ===== -->
+  <div class="post-nav">
+    <div class="container">
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        All posts
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

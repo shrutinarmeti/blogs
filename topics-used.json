@@ -37,7 +37,8 @@
     "The Role of Stop-Loss Orders in Risk Management: A Practical Guide",
     "The Mechanics of Dollar-Cost Averaging: A Timeless Investment Strategy",
     "Understanding Covered Calls: A Conservative Options Strategy for Income",
-    "The All-Weather Portfolio: A Resilient Approach to Long-Term Investing"
+    "The All-Weather Portfolio: A Resilient Approach to Long-Term Investing",
+    "How Interest Rate Swaps Work: A Beginner’s Guide to Managing Rate Risks"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -77,6 +78,7 @@
     "stop-loss-orders-risk-management",
     "dollar-cost-averaging-strategy",
     "understanding-covered-calls",
-    "all-weather-portfolio-guide"
+    "all-weather-portfolio-guide",
+    "how-interest-rate-swaps-work-beginner-guide"
   ]
 }

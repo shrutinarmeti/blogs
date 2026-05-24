@@ -44,7 +44,8 @@
     "How to Analyze a Balance Sheet: A Step-by-Step Guide for Investors",
     "How to Evaluate IPOs: A Guide to Investing in Newly Public Companies",
     "A Deep Dive Into Quality Investing: Identifying Companies Built to Last",
-    "How to Perform a Sensitivity Analysis: A Guide for Investors"
+    "How to Perform a Sensitivity Analysis: A Guide for Investors",
+    "The Mechanics of Asset Allocation: Building a Portfolio That Works for You"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -91,6 +92,7 @@
     "analyzing-a-balance-sheet",
     "evaluating-ipos-guide",
     "quality-investing-identifying-companies",
-    "sensitivity-analysis-guide"
+    "sensitivity-analysis-guide",
+    "mechanics-of-asset-allocation"
   ]
 }

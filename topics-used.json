@@ -45,7 +45,8 @@
     "How to Evaluate IPOs: A Guide to Investing in Newly Public Companies",
     "A Deep Dive Into Quality Investing: Identifying Companies Built to Last",
     "How to Perform a Sensitivity Analysis: A Guide for Investors",
-    "The Mechanics of Asset Allocation: Building a Portfolio That Works for You"
+    "The Mechanics of Asset Allocation: Building a Portfolio That Works for You",
+    "The Hidden Risks of Leveraged ETFs: What Every Investor Should Know"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -93,6 +94,7 @@
     "evaluating-ipos-guide",
     "quality-investing-identifying-companies",
     "sensitivity-analysis-guide",
-    "mechanics-of-asset-allocation"
+    "mechanics-of-asset-allocation",
+    "risks-of-leveraged-etfs"
   ]
 }

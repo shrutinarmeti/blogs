@@ -47,7 +47,8 @@
     "How to Perform a Sensitivity Analysis: A Guide for Investors",
     "The Mechanics of Asset Allocation: Building a Portfolio That Works for You",
     "The Hidden Risks of Leveraged ETFs: What Every Investor Should Know",
-    "How to Build a Glide Path for Retirement: Balancing Growth and Safety"
+    "How to Build a Glide Path for Retirement: Balancing Growth and Safety",
+    "Understanding Treasury Inflation-Protected Securities (TIPS): A Shield Against Inflation"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -97,6 +98,7 @@
     "sensitivity-analysis-guide",
     "mechanics-of-asset-allocation",
     "risks-of-leveraged-etfs",
-    "building-retirement-glide-path"
+    "building-retirement-glide-path",
+    "understanding-treasury-inflation-protected-securities-tips"
   ]
 }

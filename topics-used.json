@@ -48,7 +48,8 @@
     "The Mechanics of Asset Allocation: Building a Portfolio That Works for You",
     "The Hidden Risks of Leveraged ETFs: What Every Investor Should Know",
     "How to Build a Glide Path for Retirement: Balancing Growth and Safety",
-    "Understanding Treasury Inflation-Protected Securities (TIPS): A Shield Against Inflation"
+    "Understanding Treasury Inflation-Protected Securities (TIPS): A Shield Against Inflation",
+    "Understanding the Yield Curve: A Roadmap for Smarter Bond Investing"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -99,6 +100,7 @@
     "mechanics-of-asset-allocation",
     "risks-of-leveraged-etfs",
     "building-retirement-glide-path",
-    "understanding-treasury-inflation-protected-securities-tips"
+    "understanding-treasury-inflation-protected-securities-tips",
+    "understanding-yield-curve"
   ]
 }

@@ -55,7 +55,8 @@
     "The Snowball Effect: How Micro-Savings Can Lead to Macro Wealth",
     "Understanding Alpha and Beta: The Building Blocks of Portfolio Performance",
     "The Basics of Global Currency Trading: A Beginner’s Guide to Forex",
-    "Understanding Beta Decay in Leveraged ETFs: What Every Investor Should Know"
+    "Understanding Beta Decay in Leveraged ETFs: What Every Investor Should Know",
+    "Understanding Return on Invested Capital (ROIC): A Comprehensive Guide for Smarter Decision-Making"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -113,6 +114,7 @@
     "snowball-effect-micro-savings-macro-wealth",
     "understanding-alpha-and-beta",
     "basics-of-global-currency-trading",
-    "understanding-beta-decay-leveraged-etfs"
+    "understanding-beta-decay-leveraged-etfs",
+    "understanding-roic"
   ]
 }

@@ -59,7 +59,8 @@
     "Understanding Return on Invested Capital (ROIC): A Comprehensive Guide for Smarter Decision-Making",
     "Understanding the Buffett Indicator: What It Says About Market Valuations in 2026",
     "The Barbell Investment Strategy: Balancing Risk and Reward",
-    "Understanding Intrinsic Value: A Deep Dive into Valuation for Savvy Investors"
+    "Understanding Intrinsic Value: A Deep Dive into Valuation for Savvy Investors",
+    "Understanding the Role of Monte Carlo Simulations in Retirement Planning"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -121,6 +122,7 @@
     "understanding-roic",
     "buffett-indicator-market-valuations-2026",
     "barbell-investment-strategy",
-    "understanding-intrinsic-value"
+    "understanding-intrinsic-value",
+    "monte-carlo-simulations-retirement-planning"
   ]
 }

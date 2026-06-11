@@ -62,7 +62,8 @@
     "Understanding Intrinsic Value: A Deep Dive into Valuation for Savvy Investors",
     "Understanding the Role of Monte Carlo Simulations in Retirement Planning",
     "How to Use Sector ETFs to Build a Diversified Portfolio",
-    "Navigating the Basics of Risk Parity: A Balanced Approach to Investing"
+    "Navigating the Basics of Risk Parity: A Balanced Approach to Investing",
+    "A Guide to Dynamic Asset Allocation: Adapting Your Portfolio to Market Conditions"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -127,6 +128,7 @@
     "understanding-intrinsic-value",
     "monte-carlo-simulations-retirement-planning",
     "sector-etfs-diversified-portfolio",
-    "risk-parity-investing-basics"
+    "risk-parity-investing-basics",
+    "dynamic-asset-allocation-guide"
   ]
 }

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understanding Quantitative Momentum: A Data-Driven Approach to Outperformance — Shruti Narmeti</title>
+  <meta name="description" content="Dive into the mechanics of quantitative momentum investing, a strategy that uses data-driven metrics to identify stocks with strong performance trends. Learn how to apply this methodology to your portfolio in 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="https://shrutinarmeti.github.io" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Portfolio
+      </a>
+      <span class="site-title">Shruti<span>.</span>Blogs</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== POST HEADER ===== -->
+    <div class="post-header">
+      <div class="container">
+        <div class="post-meta">
+          <time datetime="2026-06-12">June 12, 2026</time>
+          <span>·</span>
+          <span>9 min read</span>
+          <div class="tags">
+            <span class="tag">Investing</span>
+            <span class="tag">Quantitative Finance</span>
+            <span class="tag">Momentum Investing</span>
+            <span class="tag">Equity Strategies</span>
+          </div>
+        </div>
+        <h1>Understanding Quantitative Momentum: A Data-Driven Approach to Outperformance</h1>
+        <p class="description">Dive into the mechanics of quantitative momentum investing, a strategy that uses data-driven metrics to identify stocks with strong performance trends. Learn how to apply this methodology to your portfolio in 2026.</p>
+      </div>
+    </div>
+
+    <!-- ===== POST CONTENT ===== -->
+    <section class="post-content">
+      <div class="container">
+        <article class="prose">
+
+<p>Momentum investing has long fascinated analysts, portfolio managers, and retail investors alike. The idea is simple yet powerful: stocks that have performed well in the past tend to continue performing well in the future, at least for some time. This phenomenon has been observed and documented in academic studies for decades. But what happens when we take this age-old concept and add a layer of quantitative analysis? In this post, we’ll explore the world of quantitative momentum investing: how it works, why it works, and how you can potentially incorporate it into your portfolio.</p>
+
+<hr />
+
+<h2>What is Momentum Investing?</h2>
+
+<p>At its core, momentum investing is a strategy that focuses on buying assets that have shown strong past performance and selling those with weak past performance. The key assumption here is that recent winners will continue to outperform, while recent losers will continue to underperform—at least in the short to medium term.</p>
+
+<p>Momentum is largely based on behavioral finance principles. Herd behavior, investor overreaction, and underreaction to news can cause trends to persist longer than they might in a fully efficient market. These anomalies create opportunities for investors to profit from price trends.</p>
+
+<h2>Why Quantitative Momentum?</h2>
+
+<p>Traditional momentum investing often relies on subjective judgments, such as identifying "hot" stocks or sectors. Quantitative momentum, however, seeks to remove the emotion and guesswork by using data-driven metrics. This approach systematically identifies momentum stocks based on predefined criteria, making it more objective and less prone to human bias.</p>
+
+<p>By leveraging algorithms and statistical models, quantitative momentum strategies aim to optimize selection criteria and predict which stocks will continue their upward trends. This makes the strategy more scalable and potentially more reliable.</p>
+
+<h3>Benefits of Quantitative Momentum</h3>
+
+<ul>
+  <li><strong>Objectivity:</strong> Decisions are based on data and rules rather than emotions or biases.</li>
+  <li><strong>Repeatability:</strong> The strategy can be consistently applied across different market environments.</li>
+  <li><strong>Transparency:</strong> Clear rules make it easier to understand why a stock was selected.</li>
+  <li><strong>Backtesting:</strong> Historical data can be used to test the strategy's effectiveness before implementing it in a live portfolio.</li>
+</ul>
+
+<h2>Key Metrics in Quantitative Momentum</h2>
+
+<p>Quantitative momentum strategies often rely on a combination of metrics to identify stocks with the strongest price trends. Here are some of the most commonly used measures:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>12-Month Price Momentum</strong></td>
+      <td>Measures the percentage change in a stock's price over the past 12 months, excluding the most recent month to avoid short-term noise.</td>
+    </tr>
+    <tr>
+      <td><strong>Relative Strength</strong></td>
+      <td>Compares the stock's performance to a benchmark index, such as the S&amp;P 500, over a specific time period.</td>
+    </tr>
+    <tr>
+      <td><strong>Volatility-Adjusted Momentum</strong></td>
+      <td>Adjusts momentum for the level of risk or volatility, rewarding stocks with a smoother upward trend over those with erratic movements.</td>
+    </tr>
+    <tr>
+      <td><strong>Moving Averages</strong></td>
+      <td>Evaluates the relationship between short-term and long-term moving averages to gauge momentum trends.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>The Process of Building a Quantitative Momentum Strategy</h2>
+
+<p>Creating a quantitative momentum strategy involves a systematic approach. Here’s a step-by-step guide:</p>
+
+<pre class="mermaid">
+flowchart TD
+    A[Define Investment Universe]
+    B[Select Momentum Metrics]
+    C[Set Rules and Filters]
+    D[Backtest Strategy]
+    E[Optimize and Implement]
+
+    A --> B --> C --> D --> E
+</pre>
+
+<h3>Step 1: Define Your Investment Universe</h3>
+
+<p>The first step is to determine the set of stocks you’ll be analyzing. This could be the S&amp;P 500, global equities, or a sector-specific list. Narrowing your universe can help you focus on the securities most aligned with your investment goals.</p>
+
+<h3>Step 2: Select Momentum Metrics</h3>
+
+<p>As highlighted earlier, choose a combination of metrics like 12-month price momentum and volatility-adjusted momentum. The choice of metrics will depend on your specific objectives and risk tolerance.</p>
+
+<h3>Step 3: Set Rules and Filters</h3>
+
+<p>Establish rules for identifying momentum stocks. For example:</p>
+
+<ul>
+  <li>Exclude stocks with high volatility or low liquidity.</li>
+  <li>Focus on stocks with positive earnings growth or other fundamental strengths.</li>
+  <li>Use rankings to select the top decile (top 10%) of momentum stocks.</li>
+</ul>
+
+<h3>Step 4: Backtest the Strategy</h3>
+
+<p>Backtesting involves simulating your strategy using historical data to evaluate its performance. Look for strong returns, low drawdowns, and consistent results across market cycles. Be wary of overfitting your model to historical data, as this can lead to poor performance in live markets.</p>
+
+<h3>Step 5: Optimize and Implement</h3>
+
+<p>Make adjustments to improve the strategy’s performance based on the backtesting results. Once satisfied, implement the strategy in a live portfolio, starting with a small allocation to test its real-world performance.</p>
+
+<h2>Risks to Consider</h2>
+
+<p>While quantitative momentum strategies offer the potential for outsized returns, they’re not without risk. Here are some of the key risks to be aware of:</p>
+
+<ul>
+  <li><strong>Trend Reversals:</strong> Momentum stocks can quickly reverse course, leading to significant losses if you're not prepared to exit positions in time.</li>
+  <li><strong>Market Environment:</strong> Momentum strategies tend to perform poorly in choppy or sideways markets where trends fail to develop.</li>
+  <li><strong>Turnover Costs:</strong> Frequent trading can lead to higher transaction costs and tax liabilities, reducing net returns.</li>
+  <li><strong>Overfitting:</strong> Over-optimizing your model to fit historical data can result in a strategy that doesn’t perform well in the future.</li>
+</ul>
+
+<h2>How to Get Started with Quantitative Momentum</h2>
+
+<p>If you’re interested in applying a quantitative momentum strategy, here are some practical steps to consider:</p>
+
+<ol>
+  <li><strong>Learn the Basics:</strong> Familiarize yourself with momentum investing and quantitative analysis. There are plenty of online courses and books that can help you get started.</li>
+  <li><strong>Use Tools and Software:</strong> Platforms like Python, R, and Excel can help you analyze data and backtest strategies. Alternatively, consider using investment platforms that offer built-in momentum analytics.</li>
+  <li><strong>Start Small:</strong> Test your strategy with a small amount of capital before scaling up. This will allow you to evaluate its effectiveness without taking on excessive risk.</li>
+  <li><strong>Monitor and Adjust:</strong> Regularly review your strategy’s performance and make adjustments as needed to adapt to changing market conditions.</li>
+</ol>
+
+<h2>Real-World Applications</h2>
+
+<p>In recent years, quantitative momentum has gained popularity among institutional investors, hedge funds, and even robo-advisors. For example, AQR Capital Management, one of the leading quantitative investment firms, has developed funds that explicitly target momentum factors.</p>
+
+<p>Retail investors can also benefit from this strategy through ETFs that focus on momentum stocks, such as the iShares MSCI USA Momentum Factor ETF (MTUM) or the Invesco DWA Momentum ETF (PDP). These funds use quantitative models to select and manage portfolios of high-momentum stocks.</p>
+
+<h2>Conclusion</h2>
+
+<p>Quantitative momentum investing blends the timeless appeal of momentum with the precision of data-driven analysis. It offers a structured way to capitalize on market trends while minimizing emotional decision-making. However, like any investment strategy, it’s important to understand the risks and limitations before diving in.</p>
+
+<p>As you consider incorporating quantitative momentum into your portfolio, remember that no strategy is foolproof. Always conduct thorough research, diversify your investments, and maintain a long-term perspective to navigate the complexities of the financial markets effectively.</p>
+
+<hr />
+<p>Questions or thoughts? Find me at <a href="https://shrutinarmeti.github.io">shrutinarmeti.github.io</a>.</p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== POST NAV ===== -->
+  <div class="post-nav">
+    <div class="container">
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        All posts
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

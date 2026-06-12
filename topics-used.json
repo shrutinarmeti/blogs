@@ -63,7 +63,8 @@
     "Understanding the Role of Monte Carlo Simulations in Retirement Planning",
     "How to Use Sector ETFs to Build a Diversified Portfolio",
     "Navigating the Basics of Risk Parity: A Balanced Approach to Investing",
-    "A Guide to Dynamic Asset Allocation: Adapting Your Portfolio to Market Conditions"
+    "A Guide to Dynamic Asset Allocation: Adapting Your Portfolio to Market Conditions",
+    "Understanding Quantitative Momentum: A Data-Driven Approach to Outperformance"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -129,6 +130,7 @@
     "monte-carlo-simulations-retirement-planning",
     "sector-etfs-diversified-portfolio",
     "risk-parity-investing-basics",
-    "dynamic-asset-allocation-guide"
+    "dynamic-asset-allocation-guide",
+    "quantitative-momentum-investing"
   ]
 }

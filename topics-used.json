@@ -66,7 +66,8 @@
     "A Guide to Dynamic Asset Allocation: Adapting Your Portfolio to Market Conditions",
     "Understanding Quantitative Momentum: A Data-Driven Approach to Outperformance",
     "The Power of Zero-Based Budgeting: A Fresh Approach to Personal Finance",
-    "Understanding Laddered Bond Portfolios: A Strategy for Stable Returns"
+    "Understanding Laddered Bond Portfolios: A Strategy for Stable Returns",
+    "The Mechanics of Tax-Deferred Accounts: A Deep Dive into Retirement Planning"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -135,6 +136,7 @@
     "dynamic-asset-allocation-guide",
     "quantitative-momentum-investing",
     "zero-based-budgeting",
-    "understanding-laddered-bond-portfolios"
+    "understanding-laddered-bond-portfolios",
+    "mechanics-of-tax-deferred-accounts"
   ]
 }

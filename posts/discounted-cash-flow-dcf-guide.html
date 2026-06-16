@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unpacking the Magic of Discounted Cash Flow (DCF): A Practical Guide for Investors — Shruti Narmeti</title>
+  <meta name="description" content="Learn how Discounted Cash Flow (DCF) analysis can help you value a company or investment by estimating its future cash flows. Demystify this essential financial tool in our step-by-step guide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="https://shrutinarmeti.github.io" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Portfolio
+      </a>
+      <span class="site-title">Shruti<span>.</span>Blogs</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== POST HEADER ===== -->
+    <div class="post-header">
+      <div class="container">
+        <div class="post-meta">
+          <time datetime="2026-06-16">June 16, 2026</time>
+          <span>·</span>
+          <span>8 min read</span>
+          <div class="tags">
+            <span class="tag">Fundamental Analysis</span>
+            <span class="tag">Valuation</span>
+            <span class="tag">Investing</span>
+          </div>
+        </div>
+        <h1>Unpacking the Magic of Discounted Cash Flow (DCF): A Practical Guide for Investors</h1>
+        <p class="description">Learn how Discounted Cash Flow (DCF) analysis can help you value a company or investment by estimating its future cash flows. Demystify this essential financial tool in our step-by-step guide.</p>
+      </div>
+    </div>
+
+    <!-- ===== POST CONTENT ===== -->
+    <section class="post-content">
+      <div class="container">
+        <article class="prose">
+
+<p>When it comes to valuing a company or an investment, one of the most powerful tools in an investor’s toolkit is the <strong>Discounted Cash Flow (DCF) analysis</strong>. While the name might sound intimidating, DCF is essentially about answering one key question: <em>What is this asset worth today, based on what it will generate in the future?</em></p>
+
+<p>In this post, I’ll break down DCF analysis into simple, digestible steps, explain its key components, and show you how to apply it to real-world investment scenarios. By the end, you’ll have a clear understanding of how to use DCF to make more informed financial decisions.</p>
+
+<h2>What Is Discounted Cash Flow (DCF)?</h2>
+
+<p>The DCF method is a valuation technique that calculates the present value of an investment based on its expected future cash flows. The core idea is that money today is worth more than the same amount in the future due to inflation, risk, and the opportunity cost of capital. DCF adjusts for these factors by "discounting" future cash flows back to their present value.</p>
+
+<p>DCF is widely used in corporate finance and investing to value companies, projects, and investments. Whether you’re a retail investor analyzing a stock or a business owner considering a new project, understanding DCF can help you make more rational decisions.</p>
+
+<h2>Key Components of DCF</h2>
+
+<p>Before diving into the step-by-step process, let’s first understand the key components of a DCF analysis:</p>
+
+<ul>
+  <li><strong>Cash Flows:</strong> These are the expected future cash inflows and outflows associated with the investment or project. In equity valuation, this is often the <em>free cash flow to the firm (FCFF)</em> or <em>free cash flow to equity (FCFE).</em></li>
+  <li><strong>Discount Rate:</strong> This is the rate used to discount future cash flows to the present. It accounts for the time value of money and the risk associated with the investment. Typically, the weighted average cost of capital (WACC) or required rate of return is used as the discount rate.</li>
+  <li><strong>Terminal Value:</strong> Since it’s impractical to forecast cash flows indefinitely, a terminal value is calculated to estimate the value of the business beyond the forecast period.</li>
+</ul>
+
+<h2>Step-by-Step Process for Conducting a DCF Analysis</h2>
+
+<p>Now that you’re familiar with the components, let’s walk through the steps to perform a DCF analysis.</p>
+
+<h3>Step 1: Estimate Future Cash Flows</h3>
+
+<p>Start by forecasting the company’s free cash flows for a specific period, typically 5–10 years. The free cash flow is calculated as:</p>
+
+<pre><code>Free Cash Flow (FCF) = Operating Cash Flow - Capital Expenditures</code></pre>
+
+<p>To estimate these, you can use historical data, industry benchmarks, and assumptions about revenue growth, profit margins, and capital requirements. For example:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Estimated Revenue ($M)</th>
+      <th>Operating Margin (%)</th>
+      <th>Capital Expenditures ($M)</th>
+      <th>Free Cash Flow ($M)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2027</td>
+      <td>120</td>
+      <td>20%</td>
+      <td>10</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>2028</td>
+      <td>132</td>
+      <td>21%</td>
+      <td>12</td>
+      <td>15.72</td>
+    </tr>
+    <tr>
+      <td>2029</td>
+      <td>145</td>
+      <td>22%</td>
+      <td>14</td>
+      <td>17.9</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Step 2: Determine the Discount Rate</h3>
+
+<p>The discount rate reflects the riskiness of the investment. For equity valuations, investors often use the company’s cost of equity. This is calculated using the Capital Asset Pricing Model (CAPM):</p>
+
+<pre><code>Cost of Equity = Risk-Free Rate + Beta × (Equity Risk Premium)</code></pre>
+
+<p>For example, if the risk-free rate is 3%, the equity risk premium is 6%, and the company’s beta is 1.2:</p>
+
+<pre><code>Cost of Equity = 3% + 1.2 × 6% = 10.2%</code></pre>
+
+<p>If you’re valuing the entire firm, use the weighted average cost of capital (WACC) instead.</p>
+
+<h3>Step 3: Calculate the Present Value of Cash Flows</h3>
+
+<p>Discount each year’s cash flow back to its present value using the formula:</p>
+
+<pre><code>Present Value = Cash Flow / (1 + Discount Rate)^t</code></pre>
+
+<p>Here, <em>t</em> represents the year in the forecast period (e.g., 1 for 2027, 2 for 2028). Repeat this calculation for all forecasted years and sum up the present values to get the total present value of forecasted cash flows.</p>
+
+<h3>Step 4: Calculate the Terminal Value</h3>
+
+<p>The terminal value represents the value of the business beyond the forecast period. Two common methods are:</p>
+
+<ul>
+  <li><em>Perpetuity Growth Method:</em> Assumes cash flows will grow at a constant rate forever. The formula is:</li>
+</ul>
+
+<pre><code>Terminal Value = (Final Year’s FCF × (1 + Growth Rate)) / (Discount Rate - Growth Rate)</code></pre>
+
+<ul>
+  <li><em>Exit Multiple Method:</em> Assumes the business will be sold at a certain multiple of its financial metric (e.g., EBITDA).</li>
+</ul>
+
+<p>Discount the terminal value back to the present using the discount rate.</p>
+
+<h3>Step 5: Add It All Up</h3>
+
+<p>Finally, sum the present value of the forecasted cash flows and the discounted terminal value to get the total value of the investment.</p>
+
+<pre class="mermaid">
+flowchart TD
+    A[Forecast Future Cash Flows] --> B[Determine Discount Rate]
+    B --> C[Calculate Present Value of Cash Flows]
+    C --> D[Calculate Terminal Value]
+    D --> E[Sum Total Values for Final DCF]
+</pre>
+
+<h2>Example: DCF in Action</h2>
+
+<p>Let’s assume you’re valuing a tech company with the following details:</p>
+
+<ul>
+  <li>5 years of forecasted FCF: $10M, $12M, $14M, $16M, $18M.</li>
+  <li>Discount rate: 8%.</li>
+  <li>Terminal growth rate: 3%.</li>
+</ul>
+
+<p>Using the perpetuity growth method for terminal value:</p>
+
+<pre><code>Terminal Value = ($18M × (1 + 3%)) / (8% - 3%) = $371.4M</code></pre>
+
+<p>Discounting the cash flows and terminal value back to the present gives:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>FCF ($M)</th>
+      <th>Discount Factor (8%)</th>
+      <th>Present Value ($M)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>10</td>
+      <td>0.926</td>
+      <td>9.26</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>12</td>
+      <td>0.857</td>
+      <td>10.28</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>14</td>
+      <td>0.794</td>
+      <td>11.12</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>16</td>
+      <td>0.735</td>
+      <td>11.76</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>18</td>
+      <td>0.681</td>
+      <td>12.26</td>
+    </tr>
+    <tr>
+      <td>Terminal Value</td>
+      <td>371.4</td>
+      <td>0.681</td>
+      <td>252.85</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Total Valuation = $9.26M + $10.28M + $11.12M + $11.76M + $12.26M + $252.85M = $307.53M</strong></p>
+
+<h2>Limitations of DCF</h2>
+
+<p>While powerful, DCF has its limitations:</p>
+
+<ul>
+  <li>It heavily relies on assumptions for cash flow growth rates and discount rates; small changes can lead to drastically different valuations.</li>
+  <li>Estimating a terminal value can be challenging and subjective.</li>
+  <li>It’s less effective for valuing startups or companies with unpredictable cash flows.</li>
+</ul>
+
+<h2>Final Thoughts</h2>
+
+<p>Mastering DCF analysis takes time and practice, but it’s a skill that can drastically improve your ability to evaluate investments. While it’s not without flaws, DCF provides a solid foundation for understanding the intrinsic value of an asset. By following the steps outlined here, you’ll be better equipped to make informed financial decisions and avoid overpaying for investments.</p>
+
+<hr />
+<p>Questions or thoughts? Find me at <a href="https://shrutinarmeti.github.io">shrutinarmeti.github.io</a>.</p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== POST NAV ===== -->
+  <div class="post-nav">
+    <div class="container">
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        All posts
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

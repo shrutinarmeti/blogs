@@ -69,7 +69,8 @@
     "Understanding Laddered Bond Portfolios: A Strategy for Stable Returns",
     "The Mechanics of Tax-Deferred Accounts: A Deep Dive into Retirement Planning",
     "Unpacking the Magic of Discounted Cash Flow (DCF): A Practical Guide for Investors",
-    "The Role of Behavioral Portfolio Theory in Modern Investing"
+    "The Role of Behavioral Portfolio Theory in Modern Investing",
+    "Exploring Green Bonds: Investing in a Sustainable Future"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -141,6 +142,7 @@
     "understanding-laddered-bond-portfolios",
     "mechanics-of-tax-deferred-accounts",
     "discounted-cash-flow-dcf-guide",
-    "behavioral-portfolio-theory"
+    "behavioral-portfolio-theory",
+    "exploring-green-bonds"
   ]
 }

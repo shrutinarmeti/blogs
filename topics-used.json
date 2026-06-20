@@ -71,7 +71,8 @@
     "Unpacking the Magic of Discounted Cash Flow (DCF): A Practical Guide for Investors",
     "The Role of Behavioral Portfolio Theory in Modern Investing",
     "Exploring Green Bonds: Investing in a Sustainable Future",
-    "The Role of Altman Z-Score in Predicting Corporate Bankruptcy"
+    "The Role of Altman Z-Score in Predicting Corporate Bankruptcy",
+    "The Role of Interest Rate Hedges in a Rising Rate Environment"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -145,6 +146,7 @@
     "discounted-cash-flow-dcf-guide",
     "behavioral-portfolio-theory",
     "exploring-green-bonds",
-    "altman-z-score-corporate-bankruptcy"
+    "altman-z-score-corporate-bankruptcy",
+    "interest-rate-hedges-rising-rates"
   ]
 }

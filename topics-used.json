@@ -72,7 +72,8 @@
     "The Role of Behavioral Portfolio Theory in Modern Investing",
     "Exploring Green Bonds: Investing in a Sustainable Future",
     "The Role of Altman Z-Score in Predicting Corporate Bankruptcy",
-    "The Role of Interest Rate Hedges in a Rising Rate Environment"
+    "The Role of Interest Rate Hedges in a Rising Rate Environment",
+    "Understanding the Role of Correlation in Portfolio Diversification"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -147,6 +148,7 @@
     "behavioral-portfolio-theory",
     "exploring-green-bonds",
     "altman-z-score-corporate-bankruptcy",
-    "interest-rate-hedges-rising-rates"
+    "interest-rate-hedges-rising-rates",
+    "understanding-correlation-portfolio-diversification"
   ]
 }

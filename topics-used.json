@@ -80,7 +80,8 @@
     "The Basics of Dollar Denominated Bonds: A Guide for Global Investors",
     "Navigating the 2026 Leveraged Buyout (LBO) Landscape: A Guide for Investors",
     "The Art and Science of Building a Concentrated Investment Portfolio",
-    "The Art of Managing Sequence of Returns Risk in Retirement"
+    "The Art of Managing Sequence of Returns Risk in Retirement",
+    "Dynamic Hedging: A Modern Approach to Managing Investment Risk"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -163,6 +164,7 @@
     "dollar-denominated-bonds",
     "navigating-2026-leveraged-buyouts",
     "building-concentrated-investment-portfolio",
-    "sequence-of-returns-risk-management"
+    "sequence-of-returns-risk-management",
+    "dynamic-hedging-investment-risk"
   ]
 }

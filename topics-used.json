@@ -87,7 +87,8 @@
     "Understanding the Alt-Data Revolution: How Investors Use Alternative Data to Gain an Edge",
     "How to Build a Sustainable Withdrawal Strategy for Retirement Income",
     "Understanding Gamma Squeezes: The Mechanics Behind Rapid Stock Price Surges",
-    "Understanding Pair Trading: A Market-Neutral Strategy for Modern Investors"
+    "Understanding Pair Trading: A Market-Neutral Strategy for Modern Investors",
+    "The Mechanics of Building a Core-Satellite Portfolio Strategy"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -177,6 +178,7 @@
     "understanding-alt-data-revolution",
     "sustainable-withdrawal-strategy-retirement",
     "understanding-gamma-squeezes",
-    "understanding-pair-trading-strategy"
+    "understanding-pair-trading-strategy",
+    "core-satellite-portfolio-strategy"
   ]
 }

@@ -88,7 +88,8 @@
     "How to Build a Sustainable Withdrawal Strategy for Retirement Income",
     "Understanding Gamma Squeezes: The Mechanics Behind Rapid Stock Price Surges",
     "Understanding Pair Trading: A Market-Neutral Strategy for Modern Investors",
-    "The Mechanics of Building a Core-Satellite Portfolio Strategy"
+    "The Mechanics of Building a Core-Satellite Portfolio Strategy",
+    "The Magic of Net Interest Margin: Understanding Bank Profitability"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -179,6 +180,7 @@
     "sustainable-withdrawal-strategy-retirement",
     "understanding-gamma-squeezes",
     "understanding-pair-trading-strategy",
-    "core-satellite-portfolio-strategy"
+    "core-satellite-portfolio-strategy",
+    "net-interest-margin-bank-profitability"
   ]
 }

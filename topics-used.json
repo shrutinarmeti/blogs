@@ -90,7 +90,8 @@
     "Understanding Pair Trading: A Market-Neutral Strategy for Modern Investors",
     "The Mechanics of Building a Core-Satellite Portfolio Strategy",
     "The Magic of Net Interest Margin: Understanding Bank Profitability",
-    "The Role of Dividend Payout Ratios in Evaluating Stocks: A Comprehensive Guide"
+    "The Role of Dividend Payout Ratios in Evaluating Stocks: A Comprehensive Guide",
+    "Understanding the Efficient Frontier: Optimizing Risk and Return in Portfolio Management"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -183,6 +184,7 @@
     "understanding-pair-trading-strategy",
     "core-satellite-portfolio-strategy",
     "net-interest-margin-bank-profitability",
-    "dividend-payout-ratio-guide"
+    "dividend-payout-ratio-guide",
+    "efficient-frontier-portfolio-optimization"
   ]
 }

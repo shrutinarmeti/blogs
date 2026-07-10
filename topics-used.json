@@ -91,7 +91,8 @@
     "The Mechanics of Building a Core-Satellite Portfolio Strategy",
     "The Magic of Net Interest Margin: Understanding Bank Profitability",
     "The Role of Dividend Payout Ratios in Evaluating Stocks: A Comprehensive Guide",
-    "Understanding the Efficient Frontier: Optimizing Risk and Return in Portfolio Management"
+    "Understanding the Efficient Frontier: Optimizing Risk and Return in Portfolio Management",
+    "The Basics of Blockchain Interoperability: Connecting the Dots in a Fragmented Crypto World"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -185,6 +186,7 @@
     "core-satellite-portfolio-strategy",
     "net-interest-margin-bank-profitability",
     "dividend-payout-ratio-guide",
-    "efficient-frontier-portfolio-optimization"
+    "efficient-frontier-portfolio-optimization",
+    "blockchain-interoperability-basics"
   ]
 }

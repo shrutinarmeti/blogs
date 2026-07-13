@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understanding Active Share: Measuring True Active Management in Mutual Funds — Shruti Narmeti</title>
+  <meta name="description" content="Active Share measures how much a fund’s portfolio differs from its benchmark. Learn how this metric can help you evaluate fund managers in an era of rising passive investing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="https://shrutinarmeti.github.io" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Portfolio
+      </a>
+      <span class="site-title">Shruti<span>.</span>Blogs</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== POST HEADER ===== -->
+    <div class="post-header">
+      <div class="container">
+        <div class="post-meta">
+          <time datetime="2026-07-13">July 13, 2026</time>
+          <span>·</span>
+          <span>9 min read</span>
+          <div class="tags">
+            <span class="tag">Investing</span>
+            <span class="tag">Portfolio Management</span>
+            <span class="tag">Mutual Funds</span>
+            <span class="tag">Active Management</span>
+          </div>
+        </div>
+        <h1>Understanding Active Share: Measuring True Active Management in Mutual Funds</h1>
+        <p class="description">Active Share measures how much a fund’s portfolio differs from its benchmark. Learn how this metric can help you evaluate fund managers in an era of rising passive investing.</p>
+      </div>
+    </div>
+
+    <!-- ===== POST CONTENT ===== -->
+    <section class="post-content">
+      <div class="container">
+        <article class="prose">
+
+<p>In today’s financial landscape, the debate between active and passive investment strategies continues to rage. While passive investing has grown significantly due to its cost-effectiveness and simplicity, active management still holds appeal for investors seeking outperformance. But how can you assess whether an actively managed mutual fund or ETF is truly active or just closet indexing?</p>
+<p>One powerful metric that has gained traction in recent years is <strong>Active Share</strong>. This statistic measures how much a fund’s portfolio differs from its benchmark index. In this post, we’ll break down what Active Share is, why it matters, and how you can use it to make smarter investment decisions.</p>
+
+<h2>What Is Active Share?</h2>
+<p>Active Share is a percentage that quantifies the difference between a fund’s holdings and the holdings of its benchmark index. Simply put, it measures the portion of a portfolio that is actively managed rather than mirroring the benchmark.</p>
+<p>The metric was first introduced by researchers Martijn Cremers and Antti Petajisto in a seminal 2009 paper titled "How Active Is Your Fund Manager? A New Measure That Predicts Performance." Their research found that funds with high Active Share were more likely to outperform their benchmarks over time, especially in less efficient markets.</p>
+
+<h3>How Is Active Share Calculated?</h3>
+<p>Active Share is calculated by summing the absolute differences in weight between each stock in a fund’s portfolio and the benchmark index, then dividing by two to account for overlap.</p>
+<pre><code>Active Share = (1/2) × Σ |Fund Weight<sub>i</sub> - Benchmark Weight<sub>i</sub>|</code></pre>
+<p>The resulting value ranges from 0% to 100%:</p>
+<ul>
+  <li><strong>0% Active Share:</strong> The fund is a perfect replica of the benchmark.</li>
+  <li><strong>100% Active Share:</strong> The fund holds entirely different securities than the benchmark.</li>
+</ul>
+
+<h3>Example Calculation</h3>
+<p>Consider a hypothetical fund with the following holdings compared to its benchmark:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Stock</th>
+      <th>Fund Weight</th>
+      <th>Benchmark Weight</th>
+      <th>Absolute Difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stock A</td>
+      <td>20%</td>
+      <td>15%</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>Stock B</td>
+      <td>25%</td>
+      <td>20%</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>Stock C</td>
+      <td>15%</td>
+      <td>25%</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td>Stock D</td>
+      <td>40%</td>
+      <td>40%</td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
+<p>In this case, the Active Share formula would yield:</p>
+<pre><code>Active Share = (1/2) × (5% + 5% + 10% + 0%) = 10%</code></pre>
+<p>Thus, this fund has an Active Share of 10%, indicating very low deviation from the benchmark.</p>
+
+<h2>Why Does Active Share Matter?</h2>
+<p>Active Share is significant for several reasons:</p>
+
+<h3>1. Distinguishing Closet Indexers</h3>
+<p>Some funds market themselves as actively managed but closely mimic their benchmark to avoid underperformance. These "closet indexers" charge high fees without delivering differentiated performance. Active Share helps investors identify such funds by highlighting low deviations from the index.</p>
+
+<h3>2. Assessing Manager Skill</h3>
+<p>A high Active Share suggests that a fund manager is making bold, independent investment decisions. Although this doesn’t guarantee outperformance, it indicates where a manager is adding value by deviating from the benchmark.</p>
+
+<h3>3. Understanding Portfolio Risk</h3>
+<p>Funds with high Active Share may carry higher risk because of concentrated or unconventional positions. Investors should evaluate whether this aligns with their risk tolerance and investment goals.</p>
+
+<h2>How to Interpret Active Share</h2>
+<p>Active Share alone doesn’t tell the full story of a fund’s performance or risk. However, it can be a useful tool when combined with other metrics like expense ratios, tracking error, and historical returns. Here’s a general guide to interpreting Active Share:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Active Share (%)</th>
+      <th>Interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0%-20%</td>
+      <td>Closet index fund with minimal active management.</td>
+    </tr>
+    <tr>
+      <td>20%-60%</td>
+      <td>Moderately active fund, balancing index-like behavior with some independent positions.</td>
+    </tr>
+    <tr>
+      <td>60%-100%</td>
+      <td>Highly active fund, significantly deviating from the benchmark.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Limitations of Active Share</h2>
+<p>While Active Share is a powerful tool, it isn’t without limitations:</p>
+<ul>
+  <li><strong>Lack of Context:</strong> High Active Share doesn’t guarantee outperformance, nor does low Active Share necessarily mean poor returns.</li>
+  <li><strong>Focus on Stock Selection:</strong> Active Share only measures deviations in stock selection, not other active strategies like sector tilts, factor exposures, or asset allocation.</li>
+  <li><strong>Potential for Higher Costs:</strong> Funds with high Active Share may incur higher trading costs due to frequent rebalancing.</li>
+</ul>
+<p>As with any investment metric, Active Share should be used as part of a broader analysis.</p>
+
+<h2>How to Use Active Share in Your Investment Decisions</h2>
+<p>Here are practical steps to incorporate Active Share into your fund selection process:</p>
+<ol>
+  <li><strong>Check the Fund’s Active Share:</strong> Look for this metric in the fund’s fact sheet or ask your financial advisor. Many funds now disclose Active Share as part of their performance data.</li>
+  <li><strong>Compare With Fees:</strong> Ensure the fund’s Active Share justifies its expense ratio. High fees paired with low Active Share could be a red flag for closet indexing.</li>
+  <li><strong>Align With Your Goals:</strong> Choose funds with an Active Share level that matches your investment objectives and risk tolerance. For example, a long-term growth investor may prefer a high Active Share fund, while a risk-averse investor might opt for a moderate one.</li>
+</ol>
+
+<h2>Final Thoughts</h2>
+<p>In an era where passive investing continues to dominate, Active Share offers a valuable lens for assessing the true activeness of your investment options. By understanding how a fund’s portfolio diverges from its benchmark, you can make more informed decisions and ensure you’re getting value for the fees you’re paying.</p>
+<p>While Active Share isn’t a standalone measure of a fund’s quality, it is a vital tool that can complement other evaluation metrics. Next time you’re considering an actively managed fund, remember to check its Active Share and use it as part of your overall analysis.</p>
+
+<hr />
+<p>Questions or thoughts? Find me at <a href="https://shrutinarmeti.github.io">shrutinarmeti.github.io</a>.</p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== POST NAV ===== -->
+  <div class="post-nav">
+    <div class="container">
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        All posts
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

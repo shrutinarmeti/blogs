@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Mechanics of Backtesting: A Guide for DIY Investors — Shruti Narmeti</title>
+  <meta name="description" content="Learn how to use backtesting to evaluate investment strategies and improve your portfolio performance. A step-by-step guide for DIY investors." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="https://shrutinarmeti.github.io" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Portfolio
+      </a>
+      <span class="site-title">Shruti<span>.</span>Blogs</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== POST HEADER ===== -->
+    <div class="post-header">
+      <div class="container">
+        <div class="post-meta">
+          <time datetime="2026-07-18">July 18, 2026</time>
+          <span>·</span>
+          <span>9 min read</span>
+          <div class="tags">
+            <span class="tag">Quantitative Trading</span>
+            <span class="tag">Investing</span>
+            <span class="tag">Risk Management</span>
+          </div>
+        </div>
+        <h1>The Mechanics of Backtesting: A Guide for DIY Investors</h1>
+        <p class="description">Learn how to use backtesting to evaluate investment strategies and improve your portfolio performance. A step-by-step guide for DIY investors.</p>
+      </div>
+    </div>
+
+    <!-- ===== POST CONTENT ===== -->
+    <section class="post-content">
+      <div class="container">
+        <article class="prose">
+
+<p>Backtesting is one of the most valuable tools in an investor’s toolkit. It provides a way to test investment strategies against historical data to see how they would have performed in the past. For DIY investors, understanding backtesting can be the difference between blindly following a strategy and having the confidence to execute an informed investing plan. This article will break down the mechanics of backtesting, how it works, and provide a step-by-step guide to help you get started with this powerful technique.</p>
+
+<hr />
+
+<h2>What Is Backtesting?</h2>
+
+<p>Backtesting is the process of applying a trading or investment strategy to historical data to evaluate its performance. This process helps investors understand two key aspects:</p>
+
+<ul>
+  <li><strong>Effectiveness:</strong> Does the strategy generate consistent returns over time?</li>
+  <li><strong>Risk:</strong> What level of risk does the strategy entail? How does it perform during different market conditions?</li>
+</ul>
+
+<p>The idea is simple: If a strategy worked in the past, it might work in the future. However, backtesting is not a crystal ball. It’s important to approach it as a learning tool, not a guarantee of future results. After all, markets evolve, and past performance is not always indicative of future results.</p>
+
+<h2>Why Should You Backtest?</h2>
+
+<p>Backtesting allows you to:</p>
+
+<ul>
+  <li><strong>Validate Your Strategy:</strong> Before risking your hard-earned money on an untested investment idea, you can use backtesting to validate its historical effectiveness.</li>
+  <li><strong>Understand Risks:</strong> By simulating past performance, you can observe how the strategy behaves in bull, bear, and sideways markets.</li>
+  <li><strong>Refine Your Approach:</strong> Backtesting allows you to tweak your strategy to improve its performance without any financial risk during the testing phase.</li>
+  <li><strong>Build Confidence:</strong> Seeing a strategy perform well over historical data can help you trust your approach when markets fluctuate in the future.</li>
+</ul>
+
+<h2>How Backtesting Works</h2>
+
+<p>Backtesting involves simulating historical trades based on a specific set of rules for buying and selling assets. Here’s how it typically works:</p>
+
+<ol>
+  <li><strong>Define Your Strategy:</strong> Start by creating clear and specific rules for your strategy. For instance, you might decide to buy a stock if its 50-day moving average crosses above its 200-day moving average, and sell when the reverse happens.</li>
+  <li><strong>Gather Historical Data:</strong> Obtain reliable historical data for the asset or market you want to test the strategy on. This data should include prices, volumes, dividends, and any other relevant information.</li>
+  <li><strong>Simulate Trades:</strong> Use software or manual calculations to apply your strategy to the historical data. Track when trades would occur and how much you would gain or lose.</li>
+  <li><strong>Analyze Results:</strong> Evaluate the performance of your strategy. Look at metrics like return on investment (ROI), maximum drawdown, Sharpe ratio, and win/loss ratio.</li>
+  <li><strong>Refine and Repeat:</strong> Make adjustments to your strategy based on the results and re-test. This iterative process helps optimize your approach.</li>
+</ol>
+
+<h2>Key Metrics to Analyze in Backtesting</h2>
+
+<p>When analyzing backtesting results, pay attention to the following metrics:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Return on Investment (ROI)</strong></td>
+      <td>The total return generated by the strategy, expressed as a percentage of the initial capital.</td>
+    </tr>
+    <tr>
+      <td><strong>Sharpe Ratio</strong></td>
+      <td>A measure of risk-adjusted return. The higher the Sharpe ratio, the better the strategy's performance relative to its risk.</td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Drawdown</strong></td>
+      <td>The largest percentage drop from peak to trough in the portfolio value during the backtest. It measures the risk of significant losses.</td>
+    </tr>
+    <tr>
+      <td><strong>Win/Loss Ratio</strong></td>
+      <td>The ratio of winning trades compared to losing trades. It helps assess the consistency of the strategy.</td>
+    </tr>
+    <tr>
+      <td><strong>Profit Factor</strong></td>
+      <td>The ratio of total profits to total losses. A ratio above 1 indicates a potentially profitable strategy.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Tools for Backtesting</h2>
+
+<p>There are several tools and platforms available for backtesting, ranging from beginner-friendly to professional-grade. Here are some popular options:</p>
+
+<ul>
+  <li><strong>Excel:</strong> Ideal for simple strategies and beginners. While it requires manual input, it’s a good way to learn the basics of backtesting.</li>
+  <li><strong>Backtesting Libraries:</strong> Python libraries like <code>Backtrader</code>, <code>PyAlgoTrade</code>, and <code>zipline</code> are excellent for developers who want to create custom scripts.</li>
+  <li><strong>Online Platforms:</strong> Services like Portfolio123, QuantConnect, and TradingView offer user-friendly interfaces and extensive data libraries for backtesting.</li>
+  <li><strong>Brokerage Platforms:</strong> Many online brokers provide built-in backtesting tools as part of their trading platforms.</li>
+</ul>
+
+<h2>Step-by-Step Guide to Backtesting a Simple Strategy</h2>
+
+<p>Let’s walk through an example of backtesting a simple moving average crossover strategy using basic steps:</p>
+
+<ol>
+  <li><strong>Define the Strategy:</strong> Buy a stock when its 50-day moving average crosses above its 200-day moving average, and sell when the reverse happens.</li>
+  <li><strong>Collect Data:</strong> Download historical price data for your chosen stock from a trusted source like Yahoo Finance or Alpha Vantage.</li>
+  <li><strong>Set Up the Rules:</strong> In Excel or a backtesting platform, create a column for the 50-day moving average and another for the 200-day moving average.</li>
+  <li><strong>Simulate Trades:</strong> Use a conditional formula to determine when a trade would occur based on the crossover of moving averages. Compute profits and losses for each trade.</li>
+  <li><strong>Analyze Results:</strong> Calculate key metrics like ROI, Sharpe Ratio, and Maximum Drawdown to evaluate the strategy.</li>
+</ol>
+
+<h3>Example Output:</h3>
+
+<p>Here is an example of how the backtested performance might look:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ROI</td>
+      <td>12.5%</td>
+    </tr>
+    <tr>
+      <td>Sharpe Ratio</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Maximum Drawdown</td>
+      <td>-8.4%</td>
+    </tr>
+    <tr>
+      <td>Win/Loss Ratio</td>
+      <td>60/40</td>
+    </tr>
+    <tr>
+      <td>Profit Factor</td>
+      <td>1.8</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Common Pitfalls to Avoid</h2>
+
+<p>While backtesting is a powerful tool, it’s not without its risks and limitations. Here are some common pitfalls to watch out for:</p>
+
+<ul>
+  <li><strong>Overfitting:</strong> Tweaking your strategy to perform exceptionally well on historical data can lead to poor real-world results. This is known as overfitting.</li>
+  <li><strong>Ignoring Transaction Costs:</strong> Failing to factor in transaction costs, slippage, and taxes can lead to an overly optimistic view of a strategy’s performance.</li>
+  <li><strong>Survivorship Bias:</strong> Using data sets that exclude companies that went bankrupt or were delisted can distort your results.</li>
+  <li><strong>Disregarding Changing Market Conditions:</strong> Markets evolve. A strategy that worked in the past may not perform as well in the future due to structural shifts in the market.</li>
+</ul>
+
+<h2>Final Thoughts</h2>
+
+<p>Backtesting is a critical step for any investor or trader looking to develop a successful investment strategy. By simulating historical performance, you gain valuable insights into the potential effectiveness and risk of your approach. However, always keep in mind that backtesting isn’t foolproof—a strategy’s past success doesn’t guarantee future returns.</p>
+
+<p>Start small, stay disciplined, and continuously refine your approach. Whether you’re a seasoned trader or a beginner, backtesting can be your stepping stone to a more systematic and confident investing journey.</p>
+
+<hr />
+<p>Questions or thoughts? Find me at <a href="https://shrutinarmeti.github.io">shrutinarmeti.github.io</a>.</p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== POST NAV ===== -->
+  <div class="post-nav">
+    <div class="container">
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        All posts
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 <a href="https://shrutinarmeti.github.io">Shruti Narmeti</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

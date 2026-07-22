@@ -103,7 +103,8 @@
     "The Mechanics of Backtesting: A Guide for DIY Investors",
     "The Leverage Effect: How Debt Can Magnify Returns (and Risks)",
     "Understanding the Psychology of Market Cycles: Lessons for Smarter Investing",
-    "Mastering the PEG Ratio: A Balanced Approach to Growth and Valuation"
+    "Mastering the PEG Ratio: A Balanced Approach to Growth and Valuation",
+    "Understanding Put-Call Parity: A Key Concept for Options Traders"
   ],
   "slugs": [
     "the-power-of-compound-interest",
@@ -209,6 +210,7 @@
     "mechanics-of-backtesting-diy-investors",
     "leverage-effect-magnify-returns-risks",
     "psychology-of-market-cycles",
-    "mastering-peg-ratio-growth-valuation"
+    "mastering-peg-ratio-growth-valuation",
+    "understanding-put-call-parity"
   ]
 }
